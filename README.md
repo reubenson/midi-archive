@@ -18,6 +18,18 @@ An archive of music on the web before the age of MP3s
 - Replatformed sites will be faithful to their original look and feel
 - Everything will serve static from github pages (for now anyway)
 
+### Architecture / Flow
+- The spider crawls pages, and then sends additional requests for assets like MIDI files
+    - These requests get passed through response middleware, where the response payload is then saved to disk in the assets directory
+- Each page is also saved to disk, which is handled in a Pipeline
+    - Before getting saved to disk, the HTML needs to be updated, such that references to the assets (MIDI, CSS, images) are updated to point to the self-hosted paths
+        - In order to do this, the spider will keep track of every successful request and provide the asset path transformations needed to update HTML in the Pipeline
+    - HTML will be saved in a .md file with some additional heading data
+- Each page the spider crawls will result in a markdown file, which will then be processed by 11ty to result in HTML pages served via the _sites directory
+    - Currently, the site is hosted on GitHub Pages, and will point to the _sites directory to serve all static pages and assets
+
+
+
 ### Installation / Development
 After setting up venv, install Scrapy
 `python3 -m pip install Scrapy`
@@ -50,3 +62,6 @@ To create a new spider: `scrapy genspider example example.com`
         - IA url
     - 11ty to provide common head, and other shared modules like blogring UI
     - 11ty to compose pages from scraped data
+
+- should have read architecture docs for Scrapy first https://docs.scrapy.org/en/latest/topics/architecture.html
+- `source /Users/reubenson/Projects/midi-archive/.venv/bin/activate`
