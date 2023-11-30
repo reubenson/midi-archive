@@ -22,7 +22,7 @@ eleventyConfig.addPassthroughCopy("src/assets");
     dir: {
       input: "src",
       layouts: "_layouts",
-      output: "_site"
+      output: "docs"
     }
   }
 };
