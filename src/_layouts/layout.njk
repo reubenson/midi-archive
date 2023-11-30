@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" content={{ description }}>
+    <meta name="keywords" content={{ keywords }}>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <style type="text/css"></style>
+  </head>
+  {# <body> #}
+    {{ content | safe }}
+    {# <div class="cards">
+      <div class="card front">
+        <h1>Reuben Son</h1>
+        <div class="glyph"><a href="https://frogchor.us" target="_blank">𓆏</a></div>
+        <div class="container">
+          {% renderFile './src/_includes/tiny-bio.md' %}
+        </div>
+        <div class="social">
+          {% renderFile './src/_includes/social.md' %}
+        </div>
+        <div class="container-background"></div>
+      </div>
+      <div class="card back">
+        <h1>Reuben Son</h1>
+        <div class="container">
+          <p>Some recent things I've made or been a primary contributor to ...</p>
+          {% renderFile './src/_includes/latest.md' %}
+        </div>
+        <div class="social">
+          <p>
+            Website last updated {{ timestamp }}
+          </p>
+        </div>
+        <div class="container-background"></div>
+      </div>
+    </div>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120208217-1');
+    </script> #}
+  {# </body> #}
+</html>

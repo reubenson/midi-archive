@@ -1,0 +1,218 @@
+---
+description: Prairie Frontier Cards
+keywords: Prairie Frontier Cards, midi, music, 90s
+layout: layout.njk
+---
+<body alink="#CC0000" background="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/cn.jpg" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B">
+<center>
+<a name="ht"></a> <b><font size="+4">MOTETS</font></b> <br/>
+<b><font size="+2">DU XIII° ET DU XIV° SIECLE</font></b>
+<p><b><font size="+2"><a href="#moyfranc">Motets français du XIII° siècle</a></font></b>
+<br/>
+<b><font color="#000099"><font size="+2"><a href="/web/20040911094212/http://perso.club-internet.fr/brassy/PartMed/Bamberg/Bamberg.html">Manuscript 
+    de Bamberg</a></font></font></b> <br/>
+<b><font color="#000099"><a href="/web/20040911094212/http://perso.club-internet.fr/brassy/PartMed/Bamberg/Bamberg.html">(XIII° siècle)</a></font></b>
+<br/>
+<b><font color="#000099"><font size="+2"><a href="/web/20040911094212/http://perso.club-internet.fr/brassy/PartMed/Montpel/Montpel.html">Manuscript 
+    de Montpellier</a></font></font></b> <br/>
+<b><font color="#000099"><a href="/web/20040911094212/http://perso.club-internet.fr/brassy/PartMed/Montpel/Montpel.html">(XIII° siècle)</a></font></b>
+<br/>
+<b><a href="#MO"><font size="+2">Motets</font> <font size="+1"> tirés 
+    du</font> <font size="+2">ROMAN DE FAUVEL</font></a></b> <br/>
+<b><a href="#MO">(Début XIV° siècle)</a></b> <br/>
+<b><font size="+2"><a href="#CONDUITS DU XIII°">Conduits et Danses du XIII° 
+    siècle</a></font></b><b><font size="+2"><a href="#CONDUITS DU XIII°"></a></font></b>
+</p></center>
+<p>
+<hr/>
+<center><a name="moyfranc"></a><b><font size="+2">MOTETS FRANCAIS</font></b>
+<br/><b><font size="+1">ECOLE DE NOTRE-DAME</font></b>
+<br/><b>(XIII° siècle)</b></center>
+<center><table border="">
+<tr>
+<td>
+<center><b>Trois voix</b></center>
+</td>
+<td>
+<center><b><a href="motfranc.html#PUCELETE">Pucelete</a></b></center>
+</td>
+<td>
+<center>
+<a href="/assets/perso/midi/motet2.MID"><img align="BOTTOM" border="0" height="20" src="/assets/perso/images/musique.gif" width="20"/></a>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center><b>Trois voix</b></center>
+</td>
+<td>
+<center><b><a href="motfranc.html#DOMINATOR">Dominator</a></b></center>
+</td>
+<td><a href="/assets/perso/midi/motet3.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Trois voix</b></center>
+</td>
+<td><b><a href="motfranc.html#Quant">Quant revient</a></b></td>
+<td><a href="/assets/perso/midi/motet4.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Trois voix</b></center>
+</td>
+<td>
+<center><b>L'autre jour</b></center>
+</td>
+<td><a href="/assets/perso/midi/motet5.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+</table></center>
+<center>
+<p>
+<hr/>
+<br/><a name="CONDUITS DU XIII°"></a><b><font size="+2">CONDUITS et DANSES
+du XIII° siècle</font></b>
+<br/><b><font size="+1">ECOLE NOTRE DAME</font></b></p></center>
+<center><table border="">
+<tr>
+<td>
+<center><b>Conduit à deux voix</b></center>
+</td>
+<td>
+<center><b>Pange melos lacrimosum</b></center>
+</td>
+<td><a href="/assets/perso/midi/cond1.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Conduit à deux voix</b></center>
+</td>
+<td>
+<center><b>Edi beo thu</b></center>
+</td>
+<td><a href="/assets/perso/midi/cond2.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Conduit à deux voix</b></center>
+</td>
+<td>
+<center><b>Roma gaudens jubila</b></center>
+</td>
+<td><a href="/assets/perso/midi/cond5.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Danse à deux voix</b></center>
+</td>
+<td>
+<center><b>DOMINO</b></center>
+</td>
+<td><a href="/assets/perso/midi/domino.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Danse à deux voix</b></center>
+</td>
+<td>
+<center><b>DUCTIA</b></center>
+</td>
+<td><a href="/assets/perso/midi/ductia.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Conduit à trois voix</b></center>
+</td>
+<td>
+<center><b>Beata viscera</b></center>
+</td>
+<td><a href="/assets/perso/midi/cond3.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Conduit à trois voix</b></center>
+</td>
+<td>
+<center><b>Ha in anni janua</b></center>
+</td>
+<td><a href="/assets/perso/midi/cond6.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Conduit à quatre voix</b></center>
+</td>
+<td>
+<center><b>Mundus vergens</b></center>
+</td>
+<td><a href="/assets/perso/midi/cond4.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+</table></center>
+<center>
+<p>
+<hr/>
+<br/><a name="MO"></a><b><font size="+2">MOTETS</font></b>
+<br/><b>TIRES DU</b>
+<br/><b><font size="+2">ROMAN DE FAUVEL</font></b>
+<br/><b>(début du XIV° siècle)</b></p></center>
+<center><table border="">
+<tr>
+<td>
+<center><b>Deux voix</b></center>
+</td>
+<td>
+<center><b><a href="Fauvel.html#ADE">Ade costa dormientis</a></b></center>
+</td>
+<td><a href="/assets/perso/midi/Fauv1.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Deux voix</b></center>
+</td>
+<td>
+<center><b><a href="Fauvel.html#IN MARI">In mari miserie</a></b></center>
+</td>
+<td><a href="/assets/perso/midi/Fauv2.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Trois voix</b></center>
+</td>
+<td>
+<center><b><a href="Fauvel.html#FAUVEL NOUS A FAIT">Fauvel nous a fait
+présent</a></b></center>
+</td>
+<td><a href="/assets/perso/midi/Fauv3.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Trois voix</b></center>
+</td>
+<td>
+<center><b><a href="Fauvel.html#DETRACTOR">Detractor est</a></b></center>
+</td>
+<td><a href="/assets/perso/midi/Fauv4.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+<tr>
+<td>
+<center><b>Trois voix</b></center>
+</td>
+<td>
+<center><b><a href="Fauvel.html#BON VIN">Bon vin doit</a></b></center>
+</td>
+<td><a href="/assets/perso/midi/Fauv5.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040911094212im_/http://perso.club-internet.fr/brassy/PartMed/motet/musique.gif" width="20"/></a></td>
+</tr>
+</table></center>
+<p>
+<p> </p>
+<div align="center">
+<table border="0" width="25%">
+<tr>
+<td><a href="/web/20040911094212/http://perso.club-internet.fr/brassy/PartMed/Partmed.html"><img border="0" height="29" src="/assets/perso/images/flechret.gif" width="41"/></a></td>
+<td><a href="Motets.html#ht"><img border="0" height="41" src="/assets/perso/images/flechhaut.gif" width="29"/></a></td>
+</tr>
+</table>
+</div>
+<p><br/>
+    </p>
+</p></p></body>

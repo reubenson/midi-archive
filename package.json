@@ -1,0 +1,19 @@
+{
+  "name": "midi-archive",
+  "version": "1.0.0",
+  "description": "An archive of music on the web before the age of MP3s",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "archiver": "^6.0.1"
+  }
+}

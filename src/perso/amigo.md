@@ -1,0 +1,107 @@
+---
+description: Prairie Frontier Cards
+keywords: Prairie Frontier Cards, midi, music, 90s
+layout: layout.njk
+---
+<body alink="#009900" background="/web/20040901101624im_/http://perso.club-internet.fr/brassy/PartMed/Amigo/cn.jpg" bgcolor="#FFFFFF" link="#CC0000" vlink="#993300">
+ 
+<br/>
+  <a name="ht"></a>
+<center><table border="4">
+<tr>
+<td background="/web/20040901101624im_/http://perso.club-internet.fr/brassy/PartMed/Amigo/Wb02199_.gif">
+<center><b><font size="+3">CANTIGAS DE AMIGO</font></b>
+<br/><b><font size="+2">MARTIN CODAX</font></b>
+<br/><b>Première moitié du XIII° siècle</b></center>
+</td>
+</tr>
+</table></center>
+<p>
+<center><b><a href="https://web.archive.org/web/20040901101624/http://www.interbook.net/personal/rescoto/Parnaso/codax.htm">LE
+TEXTE DES CANTIGAS</a></b></center>
+<center><table border="">
+<tr>
+<td>
+<center><b><a href="amigo2.html#I">Ondas do mar de Vigo</a></b></center>
+</td>
+<td>
+<center>
+<a href="/assets/perso/midi/amig1.MID"><img align="BOTTOM" border="0" height="20" src="/assets/perso/images/musique.gif" width="20"/></a>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center><b><a href="amigo2.html#II">Mandad'ey comigo</a></b></center>
+</td>
+<td>
+<center>
+<a href="/assets/perso/midi/amig2.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040901101624im_/http://perso.club-internet.fr/brassy/PartMed/Amigo/musique.gif" width="20"/></a>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center><b><a href="amigo2.html#III">Mia Yrmana fremosa</a></b></center>
+</td>
+<td>
+<center>
+<a href="/assets/perso/midi/amig3.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040901101624im_/http://perso.club-internet.fr/brassy/PartMed/Amigo/musique.gif" width="20"/></a>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center><b><a href="amigo2.html#IV">Ay, Deus, se sab' ora meu amigo</a></b></center>
+</td>
+<td>
+<center>
+<a href="/assets/perso/midi/amig4.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040901101624im_/http://perso.club-internet.fr/brassy/PartMed/Amigo/musique.gif" width="20"/></a>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center><b><a href="amigo2.html#V">Quantas sabedes amar amigo</a></b></center>
+</td>
+<td>
+<center>
+<a href="/assets/perso/midi/amig5.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040901101624im_/http://perso.club-internet.fr/brassy/PartMed/Amigo/musique.gif" width="20"/></a>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center><b><a href="amigo2.html#VI">Eno sagrado, en Vigo</a></b></center>
+</td>
+<td>
+<center><b>Musique inconnue</b></center>
+</td>
+</tr>
+<tr>
+<td>
+<center><b><a href="amigo2.html#VII">Ay ondasque eu vin veer</a></b></center>
+</td>
+<td>
+<center>
+<a href="/assets/perso/midi/amig7.MID"><img align="BOTTOM" border="0" height="20" src="/web/20040901101624im_/http://perso.club-internet.fr/brassy/PartMed/Amigo/musique.gif" width="20"/></a>
+</center>
+</td>
+</tr>
+</table></center>
+<center>
+<p> 
+  <table border="0" width="25%">
+<tr>
+<td><a href="/web/20040901101624/http://perso.club-internet.fr/brassy/PartMed/Partmed.html"><img border="0" height="29" src="/assets/perso/images/flechret.gif" width="41"/></a></td>
+<td><a href="amigo.html#ht"><img border="0" height="41" src="/assets/perso/images/flechhaut.gif" width="29"/></a></td>
+</tr>
+</table>
+<p> 
+  <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+</p></p></center>
+</p></body>
