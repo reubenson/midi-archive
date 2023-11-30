@@ -4,9 +4,14 @@
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+from scrapy.exceptions import IgnoreRequest
+
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
+import requests
+import os
+from urllib.parse import urlparse
 
 
 class TestSpiderMiddleware:
@@ -56,7 +61,7 @@ class TestSpiderMiddleware:
         spider.logger.info("Spider opened: %s" % spider.name)
 
 
-class TestDownloaderMiddleware:
+class DownloaderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
@@ -69,19 +74,42 @@ class TestDownloaderMiddleware:
         return s
 
     def process_request(self, request, spider):
-        # Called for each request that goes through the downloader
-        # middleware.
-
+        return None
         # Must either:
         # - return None: continue processing this request
         # - or return a Response object
         # - or return a Request object
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
-        return None
+        # return None
 
     def process_response(self, request, response, spider):
-        # Called with the response returned from the downloader.
+        url = response.url
+
+        # TO DO: pull this path from spider??
+        save_dir = f'../src/assets/{spider.target}'
+
+        # TO DO: move this to a function
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
+        if not os.path.exists(save_dir + '/midi'):
+            os.makedirs(save_dir + '/midi')
+        if not os.path.exists(save_dir + '/images'):
+            os.makedirs(save_dir + '/images')
+
+        if response.url.lower().endswith('.mid') and response.status == 200:
+            file_name = os.path.basename(urlparse(url).path)
+            with open(os.path.join(save_dir + '/midi', file_name), 'wb') as f:
+                f.write(response.body)
+            print(f"Downloaded {file_name} from {response.url}")
+
+        if response.url.lower().endswith('.jpg') and response.status == 200:
+            file_name = os.path.basename(urlparse(url).path)
+            with open(os.path.join(save_dir +'/images', file_name), 'wb') as f:
+                f.write(response.body)
+            print(f"Downloaded {file_name} from {response.url}")
+            # not sure how to prevent this response from going back into Spider parser
+            # raise IgnoreRequest("URL does not end with '.mid' or '.jpg'")
 
         # Must either;
         # - return a Response object
