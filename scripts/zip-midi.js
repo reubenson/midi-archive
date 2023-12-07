@@ -18,6 +18,8 @@ archive.pipe(output);
 directories = [
     'src/assets/perso/midi/',
     'src/assets/prairiefrontier/midi/',
+    'src/assets/emusic/midi/',
+    
 ]
 for (let dir of directories)  {
     archive.directory(dir, false)
