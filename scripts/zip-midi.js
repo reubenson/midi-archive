@@ -1,7 +1,7 @@
 const fs = require('fs');
 const archiver = require('archiver');
 
-let output = fs.createWriteStream('./src/assets/midi.zip');
+let output = fs.createWriteStream('./docs/assets/midi.zip');
 let archive = archiver('zip', {
     zlib: { level: 9 } // Sets the compression level.
 });
@@ -19,6 +19,7 @@ directories = [
     'src/assets/perso/midi/',
     'src/assets/prairiefrontier/midi/',
     'src/assets/emusic/midi/',
+    'src/assets/sankey/midi'
     
 ]
 for (let dir of directories)  {
