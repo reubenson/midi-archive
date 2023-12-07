@@ -10,24 +10,66 @@ PRAIRIEFRONTIER_URLS = [
     # "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/t-v.html"
 ]
 
+PERSO_URLS = [
+    
+]
+
 SITES = {
     "prairiefrontier": {},
     "perso": {
         "urls": [
             # "https://web.archive.org/web/20041010183445/http://perso.club-internet.fr/brassy/PartMed/Machaut/Machaut.html",
-            "https://web.archive.org/web/20040911094212/http://perso.club-internet.fr/brassy/PartMed/motet/Motets.html",
-            "https://web.archive.org/web/20041013001542/http://perso.club-internet.fr/brassy/PartMed/Adam/Adam.html",
-            "https://web.archive.org/web/20041103004027/http://perso.club-internet.fr/brassy/PartMed/Carmbur/CarmBur.html",
-            "https://web.archive.org/web/20041013013556/http://perso.club-internet.fr/brassy/PartMed/Minnesang/Minnesang.html",
-            "https://web.archive.org/web/20040901101624/http://perso.club-internet.fr/brassy/PartMed/Amigo/amigo.html",
-            "https://web.archive.org/web/20041013090228/http://perso.club-internet.fr/brassy/PartMed/Cantigas/CSMIDI.html",
-            "https://web.archive.org/web/20040808164445/http://perso.club-internet.fr/brassy/PartMed/Coincy/COINCY.html",
-            "https://web.archive.org/web/20040903012724/http://perso.club-internet.fr/brassy/PartMed/estampit/estampit.html",
-            "https://web.archive.org/web/20040903213121/http://perso.club-internet.fr/brassy/PartMed/Chans15/ChansXV.html",
-            "https://web.archive.org/web/20040813151011/http://perso.club-internet.fr/brassy/PartMed/Inst15/inst15.html",
-            "https://web.archive.org/web/20041205092511/http://perso.club-internet.fr/brassy/PartMed/Bayeux/Bay.html",
-            "https://web.archive.org/web/20040911094822/http://perso.club-internet.fr/brassy/PartMed/Trecento/trecento.html",
-            "https://web.archive.org/web/20040903213903/http://perso.club-internet.fr/brassy/PartMed/Flandres/musflam.html"
+            # "https://web.archive.org/web/20040911094212/http://perso.club-internet.fr/brassy/PartMed/motet/Motets.html",
+            # "https://web.archive.org/web/20041013001542/http://perso.club-internet.fr/brassy/PartMed/Adam/Adam.html",
+            # "https://web.archive.org/web/20041103004027/http://perso.club-internet.fr/brassy/PartMed/Carmbur/CarmBur.html",
+            # "https://web.archive.org/web/20041013013556/http://perso.club-internet.fr/brassy/PartMed/Minnesang/Minnesang.html",
+            # "https://web.archive.org/web/20040901101624/http://perso.club-internet.fr/brassy/PartMed/Amigo/amigo.html",
+            # "https://web.archive.org/web/20041013090228/http://perso.club-internet.fr/brassy/PartMed/Cantigas/CSMIDI.html",
+            # "https://web.archive.org/web/20040808164445/http://perso.club-internet.fr/brassy/PartMed/Coincy/COINCY.html",
+            # "https://web.archive.org/web/20040903012724/http://perso.club-internet.fr/brassy/PartMed/estampit/estampit.html",
+            # "https://web.archive.org/web/20040903213121/http://perso.club-internet.fr/brassy/PartMed/Chans15/ChansXV.html",
+            # "https://web.archive.org/web/20040813151011/http://perso.club-internet.fr/brassy/PartMed/Inst15/inst15.html",
+            # "https://web.archive.org/web/20041205092511/http://perso.club-internet.fr/brassy/PartMed/Bayeux/Bay.html",
+            # "https://web.archive.org/web/20040911094822/http://perso.club-internet.fr/brassy/PartMed/Trecento/trecento.html",
+            # "https://web.archive.org/web/20040903213903/http://perso.club-internet.fr/brassy/PartMed/Flandres/musflam.html",
+            # "https://web.archive.org/web/20041105171205/http://perso.club-internet.fr/brassy/PartMed/LiVerm/LiVerm.html"
+        ]
+    },
+    "vietvet": {
+        "urls": [
+            "http://www.vietvet.org/audio/playlist.htm"
+        ]
+    },
+    "irishmidifiles": {
+        "urls": [
+            "http://www.irishmidifiles.ie/midifiles.htm"
+        ]
+    },
+    "aol_israelmidi": {
+        "urls": [
+            "https://web.archive.org/web/20011211192009/http://members.aol.com/israelmidi/index.html"
+        ]
+    },
+    "laurasmidiheaven": {
+        "urls": [
+            "https://web.archive.org/web/19990417070447/http://www.laurasmidiheaven.simplenet.com/VideoGms.htm",
+            "https://web.archive.org/web/19990417070447/http://www.laurasmidiheaven.simplenet.com/VideoGms2.htm",
+            "https://web.archive.org/web/19990417070447/http://www.laurasmidiheaven.simplenet.com/VideoGms3.htm",
+            "https://web.archive.org/web/19990417070447/http://www.laurasmidiheaven.simplenet.com/VideoGms4.htm",
+            "https://web.archive.org/web/19990417070447/http://www.laurasmidiheaven.simplenet.com/VideoGms5.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5cd.htm"
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5ef.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5gh.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5ij.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5kl.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5mn.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5op.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5qr.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5st.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5uvw.htm",
+            "https://web.archive.org/web/19990503120959/http://www.laurasmidiheaven.simplenet.com/VideoGms5xyz.htm",
+            "https://web.archive.org/web/19990417070447/http://www.laurasmidiheaven.simplenet.com/VideoGms6.htm",
+            "https://web.archive.org/web/19990417070447/http://www.laurasmidiheaven.simplenet.com/VideoGms7.htm",
         ]
     }
 }
@@ -55,9 +97,8 @@ def initiate_download_assets(response, urls):
         i+=1
 
 class PrairiefrontierSpider(scrapy.Spider):
-    # name = "prairiefrontier"
     name = 'archive'
-    target = 'perso'
+    target = 'laurasmidiheaven'
 
     # allowed_domains = ["web.archive.org"]
     start_urls = SITES[target]["urls"]
