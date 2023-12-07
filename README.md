@@ -40,6 +40,11 @@ and
 
 To create a new spider: `scrapy genspider example example.com`
 
+## Deploying the model
+
+### Lambda
+- [Reference for setting up Websockets API in AWS](https://docs.aws.amazon.com/apigateway/latest/developerguide/websocket-api-chat-app.html#websocket-api-chat-app-create-api)
+
 ## Miscellaneous Notes to Myself
 - Ideally, each website in the archive would have its own subdomain, but for now just using paths off my primary personal domain
 - probably makes sense to group assets by site, not under a midi dir
