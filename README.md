@@ -31,12 +31,12 @@ An archive of music on the web before the age of MP3s
 
 
 ### Installation / Development
-After setting up venv, install Scrapy
+- initialize venv `source /Users/reubenson/Projects/midi-archive/.venv/bin/activate`
+- After setting up venv, install Scrapy
 `python3 -m pip install Scrapy`
-
-and 
-
-`scrapy crawl prairiefrontier -s LOG_LEVEL=WARNING`
+- `cd scraper` (need to be in the same directory as scrapy.cfg)
+- run scraper with `scrapy crawl archive -s LOG_LEVEL=WARNING`
+    - before running that command, update the target in the script
 
 To create a new spider: `scrapy genspider example example.com`
 
@@ -69,4 +69,13 @@ To create a new spider: `scrapy genspider example example.com`
     - 11ty to compose pages from scraped data
 
 - should have read architecture docs for Scrapy first https://docs.scrapy.org/en/latest/topics/architecture.html
-- `source /Users/reubenson/Projects/midi-archive/.venv/bin/activate`
+- Tipping point somewhere around how much I want to host via GitHub, vs pushing assets up to S3
+
+## S3 Directory Structure
+- assets
+- assets/midi
+- assets/tokens
+
+## Deploying assets
+`cd scripts`
+`./deploy_assets.sh`

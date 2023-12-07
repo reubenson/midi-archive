@@ -1,3 +1,5 @@
 .DS_STORE
 .venv
 node_modules
+tokens_noBPE
+**/__pycache__
