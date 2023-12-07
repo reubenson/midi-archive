@@ -1,3 +1,5 @@
+const path = require('path');
+const fs = require('fs');
 // const { EleventyRenderPlugin } = require("@11ty/eleventy");
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
@@ -8,7 +10,7 @@ module.exports = function(eleventyConfig) {
 //   eleventyConfig.addPassthroughCopy("project-slides.css");
 //   eleventyConfig.addPassthroughCopy("bundle.css");
 //   eleventyConfig.addPassthroughCopy({ "favicon.png": "/" });
-eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/assets");
 //   eleventyConfig.addGlobalData("myStatic", "static");
 //   // https://www.stefanjudis.com/snippets/how-to-display-the-build-date-in-eleventy/
 //   eleventyConfig.addGlobalData('timestamp', () => {
@@ -17,6 +19,13 @@ eleventyConfig.addPassthroughCopy("src/assets");
 //       'en-US', { dateStyle: 'full', timeStyle: 'long' }
 //     ).format(now);
 //   });
+  eleventyConfig.addCollection("assets", function(collectionApi) {
+      let assetsDir = path.join(__dirname, 'src/assets', 'perso/midi');
+      let assets = fs.readdirSync(assetsDir);
+
+      // maybe actually
+      return assets;
+    });
 
   return {
     dir: {
