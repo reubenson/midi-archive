@@ -32,7 +32,8 @@ midi_directories = [d for d in os.listdir(assets_path) if os.path.isdir(os.path.
 print(f'midi_directories: {midi_directories}')
 for d in midi_directories:
     print(f'd: {d}')
-    midi_paths = list(Path(os.path.join(assets_path, d)).glob('**/*.mid'))
+    # TO DO - normalize to .mid in advance
+    midi_paths = list(Path(os.path.join(assets_path, d)).glob('**/*.mid')) + list(Path(os.path.join(assets_path, d)).glob('**/*.MID'))
     if len(midi_paths):
         tokenizer.tokenize_midi_dataset(midi_paths, Path(os.path.join('tokens_noBPE', d)))
 

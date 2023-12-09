@@ -19,8 +19,11 @@ directories = [
     'src/assets/perso/midi/',
     'src/assets/prairiefrontier/midi/',
     'src/assets/emusic/midi/',
-    'src/assets/sankey/midi'
-    
+    'src/assets/sankey/midi',
+    'src/assets/irishmidifiles/midi',
+    'src/assets/aol_israelmidi/midi',
+    'src/assets/vietvet/midi',
+    'src/assets/laurasmidiheaven/midi',
 ]
 for (let dir of directories)  {
     archive.directory(dir, false)

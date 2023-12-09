@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" content={{ description }}>
+    <meta name="keywords" content={{ keywords }}>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script src="/assets/js/bundle.js"></script>
+    {# <script src="/assets/js/main.js" defer></script> #}
+    {# <script src="/assets/js/soundfontplayer-min.js"></script> #}
+    {# <script src="http://unpkg.com/tone"></script> #}
+    {# <script src="https://unpkg.com/@tonejs/midi"></script> #}
+    <style type="text/css">
+      .midi-archive-collection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Aligns items along the horizontal line */
+        align-items: center; /* Aligns items along the vertical line */
+        flex-wrap: wrap; /* Allows the items to wrap onto multiple lines */
+        gap: 10px; 
+        padding: 0;
+      }
+      .midi-archive-collection-item {
+        list-style: none;
+        position: relative
+      }
+      {# this element is going to prevent .midi files from being downloaded on click #}
+      .midi-archive-collection-item-surface {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    {{ content | safe }}
+    <button>Play</button>
+    <section class="midi-archive">
+      <h3>There are currently {{ collections.midiAssets.length }} MIDI files in the collection!</h3>
+      <ul class="midi-archive-collection">
+        {% for asset in collections.midiAssets %}
+          <li class="midi-archive-collection-item">
+            <div class="midi-archive-collection-item-surface"></div>
+            <a class="midi-file" href="{{ asset }}">{{ asset.split('/midi/')[1] }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    {# <div class="cards">
+      <div class="card front">
+        <h1>Reuben Son</h1>
+        <div class="glyph"><a href="https://frogchor.us" target="_blank">𓆏</a></div>
+        <div class="container">
+          {% renderFile './src/_includes/tiny-bio.md' %}
+        </div>
+        <div class="social">
+          {% renderFile './src/_includes/social.md' %}
+        </div>
+        <div class="container-background"></div>
+      </div>
+      <div class="card back">
+        <h1>Reuben Son</h1>
+        <div class="container">
+          <p>Some recent things I've made or been a primary contributor to ...</p>
+          {% renderFile './src/_includes/latest.md' %}
+        </div>
+        <div class="social">
+          <p>
+            Website last updated {{ timestamp }}
+          </p>
+        </div>
+        <div class="container-background"></div>
+      </div>
+    </div>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120208217-1');
+    </script> #}
+  </body>
+</html>

@@ -6,15 +6,20 @@
   "scripts": {
     "dev": "npx @11ty/eleventy --serve",
     "zip-midi": "node scripts/zip-midi.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify ./src/assets/js/main.js -o ./docs/assets/js/bundle.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "browserify": "^17.0.0"
   },
   "dependencies": {
-    "archiver": "^6.0.1"
+    "archiver": "^6.0.1",
+    "bg-sound": "^2.0.0",
+    "freepats": "^1.0.3",
+    "timidity": "^1.3.0"
   }
 }

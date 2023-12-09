@@ -2,6 +2,10 @@
 
 An archive of music on the web before the age of MP3s
 
+## Repository Directory Structure
+- I want to store MIDI data in the repo, but keep the filesize of the repo from ballooning too much, so there should be no repetition. 
+- I want to store HTML data in the repo as well. And images too?
+
 ## Web scraping tool for building the archive
 
 - Each archived site to be hosted will preserve HTML, CSS, and MIDI
