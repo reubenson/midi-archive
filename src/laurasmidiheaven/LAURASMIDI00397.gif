@@ -3,183 +3,194 @@ description: Prairie Frontier Cards
 keywords: Prairie Frontier Cards, midi, music, 90s
 layout: layout.njk
 ---
-<body bgcolor="#CCCCCC" leftmargin="0" marginheight="6" marginwidth="0" onload="setcookie();" topmargin="6">
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="760">
-<!-- fwtable fwsrc="SNToo_indus_headergray.png" fwbase="main_gray_export.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="1" -->
+<body background="images/category/def_bkg.gif" bottommargin="0" leftmargin="0" marginheight="0" marginwidth="0" rightmargin="0" topmargin="0">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tr>
-<td><table align="center" border="0" cellpadding="0" cellspacing="0" width="300">
+<!--Left Side-->
+<td width="50%"> </td>
+<!-- Center -->
+<td background="/images/main/0.gif" bgcolor="#ffffff" valign="top">
+<table bgcolor="#FFFFFF" border="0" cellpadding="1" cellspacing="0" width="754">
 <tr>
-<td><a href="/index.html"><img alt="" border="0" height="85" name="header_logo" src="/assets/laurasmidiheaven/images/header_logo.gif" width="300"/></a></td>
-</tr>
-<tr>
-<td><img alt="" border="0" height="31" name="header_home_order_login" src="/assets/laurasmidiheaven/images/header_home_order_login.gif" usemap="#m_header_home_order_login" width="300"/></td>
-</tr>
-</table></td>
-<td><table align="center" border="0" cellpadding="0" cellspacing="0" width="180">
-<tr>
-<td><a href="../about.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r1_c2','','../images/layout/main_gray_export_r1_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f2.jpg',1)"><img alt="" border="0" height="23" name="main_gray_export_r1_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r1_c2.jpg" width="180"/></a></td>
-</tr>
-<tr>
-<td><a href="../services.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r2_c2','','../images/layout/main_gray_export_r2_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f3.jpg',1)"><img alt="" border="0" height="23" name="main_gray_export_r2_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r2_c2.jpg" width="180"/></a></td>
-</tr>
-<tr>
-<td><a href="../data_center.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r4_c2','','../images/layout/main_gray_export_r4_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f4.jpg',1)"><img alt="" border="0" height="23" name="main_gray_export_r4_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r4_c2.jpg" width="180"/></a></td>
-</tr>
-<tr>
-<td><a href="../support.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r6_c2','','../images/layout/main_gray_export_r6_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f5.jpg',1)"><img alt="" border="0" height="23" name="main_gray_export_r6_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r6_c2.jpg" width="180"/></a></td>
-</tr>
-<tr>
-<td><a href="../contact.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r9_c2','','../images/layout/main_gray_export_r9_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f6.jpg',1)"><img alt="" border="0" height="24" name="main_gray_export_r9_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r9_c2.jpg" width="180"/></a></td>
-</tr>
-</table></td>
-<td><img alt="" border="0" height="116" name="eyeinsky" src="/assets/laurasmidiheaven/images/eyeinsky.jpg" width="280"/></td>
-</tr>
-<!-- InstanceBeginEditable name="TitleImage" -->
-<tr>
-<td><img alt="" border="0" height="55" name="header_title" src="/assets/laurasmidiheaven/images/welcome.gif" width="300"/></td>
-<td><img alt="" border="0" height="55" name="header_filler" src="/assets/laurasmidiheaven/images/header_filler.gif" width="180"/></td>
-<td><a href="/contact.html"><img alt="" border="0" height="55" name="header_phone" src="/assets/laurasmidiheaven/images/header_phone.gif" width="280"/></a></td>
-</tr>
-<!-- InstanceEndEditable -->
-<map name="m_header_home_order_login">
-<area alt="" coords="33,7,95,29" href="http://www.simplenet.com" shape="rect"/>
-<area alt="" coords="105,7,184,29" href="http://www.simplenet.com/order" shape="rect"/>
-<area alt="" coords="198,7,261,29" href="https://secure.simplenet.com/cp" shape="rect"/>
-</map>
-</table>
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="760">
-<tr>
-<td background="../images/layout/bg.gif">
-<!-- InstanceBeginEditable name="BreadCrumbs" -->
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="body" -->
-<table align="center" background="../images/layout/1x1eeeeee.gif" border="0" cellpadding="5" cellspacing="0" width="725">
-<tr>
-<td align="left" valign="top">
-<div align="center">
-<table border="0" cellpadding="0" cellspacing="0" height="120" width="700">
-<tr>
-<td align="left" width="500"><img alt="bobsimage 500 x 120" height="120" name="bobsimage" src="/assets/laurasmidiheaven/images/jump_header_ad-2.gif" width="500"/></td>
-<form action="http://af1.simplenet.com/rd.php" method="GET">
-<td align="center" background="../jump/jump_header_ds-2.gif" valign="top">
-<img height="23" src="/assets/laurasmidiheaven/images/find_name.gif" width="200"/>
-<input name="cbid" type="hidden" value="8064"/>
-<input name="url" type="hidden" value="http://www.simplenet.com/search/search.php"/>
-<input name="d" size="15" type="text"/>
-<input class="subbut" type="submit" value="GO"/>
-<div class="smbody">Find your domain in the following tlds: .com, .net, .org, .info, .biz, and .us </div>
-<div class="smbody"><br/>
-				  Already have a domain or site? <a href="http://www.simplenet.com/order/"><br/>
-				  Move it to SimpleNet</a></div>
-</td></form>
+<td align="center"><!-- FASTCLICK.COM 728x90 and 468x60 BANNER CODE for greeting-cards.com -->
+<script language="javascript" src="http://media.fastclick.net/w/get.media?sid=5728&amp;m=1&amp;tp=5&amp;d=j&amp;t=n"></script>
+<noscript><a href="http://media.fastclick.net/w/click.here?sid=5728&amp;m=1&amp;c=1" target="_blank">
+<img border="1" height="90" src="/assets/laurasmidiheaven/images/get.media" width="728"/></a></noscript>
+<!-- FASTCLICK.COM 728x90 and 468x60 BANNER CODE for greeting-cards.com --><!-- begin ZEDO -->
+<script language="JavaScript">
+var zflag_nid="162"; var zflag_cid="446/1"; var zflag_sid="317"; var zflag_width="1"; var zflag_height="1"; var zflag_sz="15"; 
+</script>
+<iframe allowtransparency="true" frameborder="0" height="1" marginheight="0" marginwidth="0" scrolling="no" src="http://c1.zedo.com/jsc/c1/ff2.html?n=162;c=446/1;s=317;d=15;w=1;h=1" width="1"><script language="JavaScript" src="http://c1.zedo.com/jsc/c1/ff2.js"></script></iframe>
+<!-- end ZEDO --><!-- stats pop --><!-- stats --><!-- stats US --></td>
 </tr>
 </table>
-</div>
-<br/> <table align="center" border="0" cellpadding="1" cellspacing="0" width="700">
-<tr valign="top">
-<!--- package 1 --->
-<td width="250">
-<table bordercolor="#666666" cellpadding="4" cellspacing="0" class="tableborder" width="100%">
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="754">
 <tr>
-<td bgcolor="#3553a9" class="bodyWHT">SimpleNet Starter</td>
-<td bgcolor="#3553a9" class="bodyWHT"> </td>
+<td rowspan="4"><img border="0" height="1" src="/assets/laurasmidiheaven/images/0.gif" width="1"/></td>
+<td><img border="0" height="1" src="/images/main/0.gif" width="284"/></td>
+<td><img border="0" height="1" src="/images/main/0.gif" width="332"/></td>
+<td><img border="0" height="1" src="/images/main/0.gif" width="136"/></td>
+<td rowspan="4"><img border="0" height="1" src="/images/main/0.gif" width="1"/></td>
 </tr>
 <tr>
-<td align="left" valign="top"><span class="bodyRED"><strong><a href="https://cp.simplenet.com:8443/psoft/servlet/psoft.hsphere.CP?action=signup&amp;plan_id=7004&amp;signup=yes&amp;template_name=signup/begin.html&amp;domain_type=3ldomain"><img align="right" border="0" height="69" src="/assets/laurasmidiheaven/images/only499.gif" width="72"/></a>Free
-                          Third Level Domain</strong></span><strong><br/>
-yourname.simplenet.com</strong><br/>
-<br/>
-40 MB Disk Space<br/>
-            2 GB Monthly Transfer<br/>
-            2 Email Accounts<br/>
-            Microsoft FrontPage® Extensions<br/>
-            SiteStudio<br/>
-<br/> <br/>
-</td>
-<td align="left" rowspan="3" valign="top" width="1"><img height="230" src="/assets/laurasmidiheaven/images/1x1eeeeee.gif" width="1"/></td>
+<td rowspan="2" valign="bottom"><a href="/index.jsp"><img alt="Greeting-cards.com: A better way to greet for FREE since 1995." border="0" height="46" src="/assets/laurasmidiheaven/images/logo_3.gif" width="284"/></a></td>
+<td class="Ver1" colspan="2" height="23">Welcome, greeting-cards.com guest! Login as a member <a href="/login.jsp">here</a></td>
 </tr>
 <tr>
-<td align="center"><a href="https://cp.simplenet.com:8443/psoft/servlet/psoft.hsphere.CP?action=signup&amp;plan_id=7004&amp;signup=yes&amp;template_name=signup/begin.html&amp;domain_type=3ldomain"><img border="0" height="20" src="/assets/laurasmidiheaven/images/blue_order_but.gif" width="120"/></a></td>
-</tr>
+<td align="right" colspan="2" valign="bottom">
+<table border="0" cellpadding="0" cellspacing="0">
 <tr>
-<td align="center"><strong>$5.00 Setup</strong></td>
+<td bgcolor="#FF6633" rowspan="2" valign="top"><img border="0" height="20" src="/assets/laurasmidiheaven/images/mtop_mx.gif" width="1"/></td>
+<td bgcolor="#FFE880" rowspan="2" valign="top"><img border="0" height="20" src="/assets/laurasmidiheaven/images/mtop_lxx.gif" width="4"/></td>
+<td bgcolor="#FF6633"><img border="0" height="1" src="/images/main/0.gif" width="95"/></td>
+<td bgcolor="#FFE880" rowspan="2" valign="top"><img border="0" height="20" src="/assets/laurasmidiheaven/images/mtop_rxx.gif" width="4"/></td>
+<td bgcolor="#FF6633" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_mx.gif" width="1"/></td>
+<td bgcolor="#FFE880" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_lxx.gif" width="4"/></td>
+<td bgcolor="#FF6633"><img border="0" height="1" src="/images/main/0.gif" width="115"/></td>
+<td bgcolor="#FFE880" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_rxx.gif" width="4"/></td>
+<td bgcolor="#FF6633" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_mx.gif" width="1"/></td>
+<td bgcolor="#FFE880" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_lxx.gif" width="4"/></td>
+<td bgcolor="#FF6633"><img border="0" height="1" src="/images/main/0.gif" width="140"/></td>
+<td bgcolor="#FFE880" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_rxx.gif" width="4"/></td>
+<td bgcolor="#FF6633" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_mx.gif" width="1"/></td>
+<td bgcolor="#FFE880" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_lxx.gif" width="4"/></td>
+<td bgcolor="#FF6633"><img border="0" height="1" src="/images/main/0.gif" width="80"/></td>
+<td bgcolor="#FFE880" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_rxx.gif" width="4"/></td>
+<td bgcolor="#FF6633" rowspan="2" valign="top"><img border="0" height="20" src="/images/main/mtop_mx.gif" width="1"/></td>
+</tr><tr>
+<td align="center" bgcolor="#FFE880" height="22" nowrap=""><a class="tabmenu" href="/index.jsp">FREE ecards</a></td>
+<td align="center" bgcolor="#FFE880" nowrap=""><a class="tabmenu" href="/reasons.jsp">greeting reasons</a></td>
+<td align="center" bgcolor="#FFE880" nowrap=""><a class="tabmenu" href="/featured.jsp">featured FREE ecards</a></td>
+<td align="center" bgcolor="#FFE880" nowrap=""><a class="tabmenu" href="/link.jsp">link to us</a></td>
 </tr>
 </table>
 </td>
-<!--- package 2 --->
-<td width="250"><table bordercolor="#666666" cellpadding="4" cellspacing="0" class="tableborder" width="100%">
-<tr>
-<td bgcolor="#3553a9" class="bodyWHT">SimpleNet S150</td>
-<td bgcolor="#3553a9" class="bodyWHT"> </td>
 </tr>
-<tr>
-<td align="left" valign="top"><span class="bodyRED"><strong><a href="https://cp.simplenet.com:8443/psoft/servlet/psoft.hsphere.CP?action=signup&amp;plan_id=7005&amp;signup=yes&amp;template_name=signup/begin.html"><img align="right" border="0" height="69" src="/assets/laurasmidiheaven/images/only1149.gif" width="72"/></a>Free
-                        Domain Name</strong></span><strong><br/>
-      www.yourname.com </strong><br/>
-<br/>
-      150 MB Disk Space<br/>
-      8 GB Monthly Transfer<br/>
-      10 Email Accounts<br/>
-      Microsoft FrontPage® Extensions<br/>
-      SiteStudio<br/>
-      Miva/PHP/MySQL<br/>
-      Ecommerce enabled<br/>
-</td>
-<td align="left" rowspan="3" valign="top" width="1"><img height="230" src="../images/layout/1x1eeeeee.gif" width="1"/></td>
-</tr>
-<tr>
-<td align="center"><a href="https://cp.simplenet.com:8443/psoft/servlet/psoft.hsphere.CP?action=signup&amp;plan_id=7005&amp;signup=yes&amp;template_name=signup/begin.html"><img border="0" height="20" src="/images/layout/blue_order_but.gif" width="120"/></a> </td>
-</tr>
-<tr>
-<td align="center"><strong>$15.00 Setup</strong></td>
+<tr bgcolor="#FF9900">
+<td class="Ver1" colspan="2" nowrap="">  FREE members benefits &gt;&gt; <a class="menu1" href="/registration_change.jsp">my account</a> | <a class="menu1" href="/addressbook.jsp">address book</a> | <a class="menu1" href="/reminder.jsp">reminders</a> | <a class="menu1" href="/cardplanner.jsp?scene=reschedule">reschedule ecards</a> | <a class="menu1" href="/cardplanner.jsp?scene=list">sent ecards</a></td>
+<td align="right" nowrap=""><a href="/login.jsp"><img alt="login" border="0" height="17" src="/assets/laurasmidiheaven/images/btn_login.gif" width="51"/></a><a href="/registration.jsp"><img alt="join for FREE" border="0" height="17" src="/assets/laurasmidiheaven/images/btn_join.gif" width="80"/></a></td>
 </tr>
 </table>
-</td>
-<!--- package 3 --->
-<td align="right" width="200">
-<table bordercolor="#666666" cellpadding="4" cellspacing="0" class="tableborder" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="754">
 <tr>
-<td bgcolor="#3553a9" class="bodyWHT">All Accounts Feature</td>
+<td><img alt="" height="1" src="/images/main/0.gif" width="12"/></td>
+<td valign="top" width="604">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top"><img alt="" height="8" src="/images/main/0.gif" width="1"/><br/>
+<span class="tabmenublue"><a class="tabmenublue" href="/index.jsp"><b>greeting-cards.com</b></a> &gt; error</span>
+</td>
 </tr>
 <tr>
-<td align="left" valign="top"><div align="left"><img align="right" height="230" src="../images/layout/1x1eeeeee.gif" width="1"/>- 24/7 Phone &amp; Email Support<br/>
-                        - 30-day Money Back Guarantee<br/>
-                        - Free Site Building Software<br/>
-                        - Free Statistics Software<br/>
-                        - Web Mail and POP<br/>
-                        - Redundant Web Servers<br/>                      
-                        - Revolutionary Architecture<br/>
-<br/>
-<br/>
-<a href="../why.html"><img border="0" height="94" src="/assets/laurasmidiheaven/images/jumpwhy.gif" width="188"/></a></div></td>
+<td colspan="2"><img alt="" height="8" src="/images/main/0.gif" width="1"/></td>
+</tr>
+<tr>
+<td colspan="2">
+<table align="center" bgcolor="#ED280D" border="0" cellpadding="5" cellspacing="1" width="450">
+<tr>
+<td bgcolor="#FFED7B"><font color="#ED280D"><b>Oops!</b></font><br/>
+				The page you're looking for can't be found on greeting-cards.com.<br/>
+				The link you followed may be outdated, or there may be a misspelling.<br/>
+<ul>
+<li>You can return to our <a href="/index.jsp">home page</a>.</li>
+<li>If you are still experiencing problems, please <a href="/contact_us.jsp">contact us</a>.</li>
+</ul>
+				We'll be more than happy to help you try to find what you're looking for!
+	            </td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
-<br/> <table align="center" border="0" bordercolor="#666666" cellpadding="2" cellspacing="0" class="tableborder" width="700">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tr>
-<td align="center" class="bodyHeader"><a href="http://www.simplenet.com/services.html">View all of SimpleNet's Products</a></td>
+<td align="center" colspan="3" valign="bottom"><br/>
+<img height="10" src="/images/main/0.gif" width="1"/>
+<table bgcolor="#FBFBF9" border="0" cellpadding="0" cellspacing="0" height="155" width="427">
+<tr>
+<td><img border="0" height="13" src="/assets/laurasmidiheaven/images/gr_frame01.gif" width="19"/></td>
+<td><img border="0" height="13" src="/assets/laurasmidiheaven/images/gr_frame02.gif" width="390"/></td>
+<td><img border="0" height="13" src="/assets/laurasmidiheaven/images/gr_frame03.gif" width="18"/></td>
 </tr>
-</table> <p> <br/>
-<span class="smbody">*Rate based on yearly pre-payment.</span></p>
+<tr>
+<td><img border="0" height="127" src="/assets/laurasmidiheaven/images/gr_frame04.gif" width="19"/></td>
+<td align="center" valign="center">
+<table bgcolor="#FBFBF9" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="center"></td>
+<td align="center" valign="center"><a href="http://web4.greeting-cards.com/ad/slots/click.jsp?idc=4291" target="_blank"><img border="0" height="125" src="/assets/laurasmidiheaven/images/0303-pillowbuttons-125125.gif" width="125"/></a></td>
+<td align="right" valign="center"></td>
+</tr>
+</table>
+</td>
+<td><img border="0" height="127" src="/assets/laurasmidiheaven/images/gr_frame05.gif" width="18"/></td>
+</tr>
+<tr>
+<td><img border="0" height="15" src="/assets/laurasmidiheaven/images/gr_frame07.gif" width="19"/></td>
+<td><img border="0" height="15" src="/assets/laurasmidiheaven/images/gr_frame08.gif" width="390"/></td>
+<td><img border="0" height="15" src="/assets/laurasmidiheaven/images/gr_frame09.gif" width="18"/></td>
+</tr>
+</table>
+<img height="2" src="/images/main/0.gif" width="1"/>
 </td>
 </tr>
 </table>
-<!-- InstanceEndEditable -->
 </td>
-</tr>
-<tr>
-<td height="22" valign="top"><img height="22" src="/assets/laurasmidiheaven/images/bottom.gif" width="760"/></td>
+<td><img alt="" height="1" src="/images/main/0.gif" width="1"/></td>
+<td align="center" valign="top"><img alt="" height="10" src="/images/main/0.gif" width="1"/><br/>
+<a href="http://web4.greeting-cards.com/ad/slots/click.jsp?idc=4378" target="_blank"><img border="0" height="600" src="/assets/laurasmidiheaven/images/smiley120x600a.gif" width="120"/></a><br/>
+</td>
+<td><img alt="" height="1" src="/images/main/0.gif" width="1"/></td>
 </tr>
 </table>
 <br/>
-<table align="center" border="0" cellpadding="10" cellspacing="0" class="footer" width="760">
+<table align="center" border="0" cellpadding="0" cellspacing="0">
 <tr>
-<td><div align="center" class="footer">COPYRIGHT © 2003 SimpleNet, Inc. 
-        | All Rights Reserved.| 619-243-3212 | <a href="/privacy.html">Privacy 
-        Statement </a> - <a href="/policies.html">Terms of Use</a> - <a href="/support.html">Support</a></div>
+<td bgcolor="#ED280D" colspan="3"><img alt="" height="1" src="/images/main/0.gif" width="752"/></td>
+</tr>
+<tr>
+<td><img alt="" height="1" src="/images/main/0.gif" width="1"/></td>
+<td><img alt="" height="1" src="/images/main/0.gif" width="616"/></td>
+<td><img alt="" height="1" src="/images/main/0.gif" width="136"/></td>
+<td><img alt="" height="1" src="/images/main/0.gif" width="1"/></td>
+</tr>
+</table>
+<br/>
+<form action="/card_pickup.jsp" method="post" name="pick">
+<table border="0" cellpadding="0" cellspacing="0" width="754">
+<tr>
+<td><img alt="" height="30" src="/images/main/0.gif" width="10"/></td>
+<td align="center" class="tabmenu" nowrap="">ecard pickup</td>
+<td><img alt="" height="1" src="/images/main/0.gif" width="10"/></td>
+<td><input name="pickup" size="20" type="text" value="enter your ecard code"/></td>
+<td> <a href="javascript:document.pick.submit()"><img alt="go" border="0" height="18" src="/assets/laurasmidiheaven/images/bn_go.gif" width="22"/></a></td>
+<td width="100%"> </td>
+<td><a href="#top"><img alt="go up" border="0" height="18" src="/assets/laurasmidiheaven/images/bn_go_up.gif" width="48"/></a></td>
+<td><img alt="" height="1" src="/images/main/0.gif" width="9"/></td>
+</tr>
+</table>
+</form>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center" class="link">
+<a class="link" href="/link.jsp">link to us</a> | 
+<a class="link" href="/advertise.jsp">advertise with us</a> |
+<a class="link" href="/termsofuse.jsp">terms of services</a> |
+<a class="link" href="/privacy_policy.jsp">privacy policy</a> |
+<a class="link" href="/about.jsp">about us</a> |
+<a class="link" href="/contact_us.jsp">contact us</a>
 </td>
+</tr>
+<tr>
+<td align="center" class="Ver1">
+<br/><a class="Ver1" name="down">© 1995 - 2004 Greeting-cards.com, Inc. All rights reserved</a><br/><br/>
+</td>
+</tr>
+</table>
+</td>
+<!--Right Side-->
+<td width="50%"> </td>
 </tr>
 </table>
 </body>

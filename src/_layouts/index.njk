@@ -7,7 +7,7 @@
     <meta name="description" content={{ description }}>
     <meta name="keywords" content={{ keywords }}>
     <link rel="icon" type="image/png" href="/favicon.png">
-    <script src="/assets/js/bundle.js"></script>
+    <script src="{{'/assets/js/bundle.js' | url}}"></script>
     {# <script src="/assets/js/main.js" defer></script> #}
     {# <script src="/assets/js/soundfontplayer-min.js"></script> #}
     {# <script src="http://unpkg.com/tone"></script> #}
@@ -92,7 +92,7 @@
               {% for asset in data.midis %}
                 <li class="midi-archive-collection-item">
                   <div class="midi-archive-collection-item-surface"></div>
-                  <a class="midi-file" href="{{ asset }}">{{ asset.split('/midi/')[1] }}</a>
+                  <a class="midi-file" href="{{ asset | url }}">{{ asset.split('/midi/')[1] }}</a>
                 </li>
               {% endfor %}
             </ul>

@@ -1,13 +1,22 @@
 {
-    "prairiefrontier": {
-        "name": "Prairie Frontier",
-        "homepage": "http://www.prairiefrontier.com/pfcards/Xtrapgs/midi.html",
+    "sankey": {
+        "name": "Bach MIDI Sequences by John Sankey",
+        "homepage": "http://www.jsbach.net/midi/midi_johnsankey.html",
+        "description": "John Sankey - Harpsichordist to the Internet",
+        "urls": []
+    },
+    "mahamidi": {
+        "name": "MAHAMIDI --- Midi Files of John Mclaughlin",
+        "homepage": "https://users.cs.cf.ac.uk/Dave.Marshall/mahamidi/",
         "urls": [
-            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/a-e.html",
-            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/f-j.html",
-            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/k-o.html",
-            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/p-s.html",
-            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/t-v.html"
+            "https://users.cs.cf.ac.uk/Dave.Marshall/mahamidi/"
+        ]
+    },
+    "vietvet": {
+        "name": "The Play List For The Vietnam Veterans Home Page",
+        "homepage": "http://www.vietvet.org/audio/playlist.htm",
+        "urls": [
+            "http://www.vietvet.org/audio/playlist.htm"
         ]
     },
     "perso": {
@@ -29,20 +38,6 @@
             "https://web.archive.org/web/20040911094822/http://perso.club-internet.fr/brassy/PartMed/Trecento/trecento.html",
             "https://web.archive.org/web/20040903213903/http://perso.club-internet.fr/brassy/PartMed/Flandres/musflam.html",
             "https://web.archive.org/web/20041105171205/http://perso.club-internet.fr/brassy/PartMed/LiVerm/LiVerm.html"
-        ]
-    },
-    "vietvet": {
-        "name": "The Play List For The Vietnam Veterans Home Page",
-        "homepage": "http://www.vietvet.org/audio/playlist.htm",
-        "urls": [
-            "http://www.vietvet.org/audio/playlist.htm"
-        ]
-    },
-    "irishmidifiles": {
-        "name": "Frank Lennon's IRISH MIDI FILES",
-        "homepage": "http://www.irishmidifiles.ie/midifiles.htm",
-        "urls": [
-            "http://www.irishmidifiles.ie/midifiles.htm"
         ]
     },
     "aol_israelmidi": {
@@ -77,11 +72,12 @@
             "https://web.archive.org/web/19981206162031/http://www.laurasmidiheaven.simplenet.com/Classmidi.htm"
         ]
     },
-    "mahamidi": {
-        "name": "MAHAMIDI --- Midi Files of John Mclaughlin",
-        "homepage": "https://users.cs.cf.ac.uk/Dave.Marshall/mahamidi/",
+    "elephanttalk": {
+        "name": "Elephant Talk - The Official King Crimson Website",
+        "description": "This page is dedicated to MIDI and .WAV files of Robert Fripp, King Crimson and other related interests.",
+        "homepage": "https://www.elephant-talk.com/audio.htm",
         "urls": [
-            "https://users.cs.cf.ac.uk/Dave.Marshall/mahamidi/"
+            "https://www.elephant-talk.com/audio.htm"
         ]
     },
     "botproductions": {
@@ -92,14 +88,6 @@
             "https://www.botproductions.com/music/vgloria.html",
             "https://www.botproductions.com/music/carmina.html",
             "https://www.botproductions.com/music/school.html"
-        ]
-    },
-    "elephanttalk": {
-        "name": "Elephant Talk - The Official King Crimson Website",
-        "description": "This page is dedicated to MIDI and .WAV files of Robert Fripp, King Crimson and other related interests.",
-        "homepage": "https://www.elephant-talk.com/audio.htm",
-        "urls": [
-            "https://www.elephant-talk.com/audio.htm"
         ]
     },
     "halhkmusic": {
@@ -129,10 +117,22 @@
         "description": "Early music midi files by Curtis Clark",
         "urls": []
     },
-    "sankey": {
-        "name": "Bach MIDI Sequences by John Sankey",
-        "homepage": "http://www.jsbach.net/midi/midi_johnsankey.html",
-        "description": "John Sankey - Harpsichordist to the Internet",
-        "urls": []
+    "irishmidifiles": {
+        "name": "Frank Lennon's IRISH MIDI FILES",
+        "homepage": "http://www.irishmidifiles.ie/midifiles.htm",
+        "urls": [
+            "http://www.irishmidifiles.ie/midifiles.htm"
+        ]
+    },
+    "prairiefrontier": {
+        "name": "Prairie Frontier",
+        "homepage": "http://www.prairiefrontier.com/pfcards/Xtrapgs/midi.html",
+        "urls": [
+            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/a-e.html",
+            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/f-j.html",
+            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/k-o.html",
+            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/p-s.html",
+            "https://web.archive.org/web/19990220173318/http://www.prairiefrontier.com/pfcards/Xtrapgs/t-v.html"
+        ]
     }
 }

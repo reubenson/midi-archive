@@ -32,6 +32,10 @@ class ArchiveSpider(scrapy.Spider):
 
     # allowed_domains = ["web.archive.org"]
     start_urls = SITES[target]["urls"]
+    # uncomment to scrape manually defined
+    # start_urls = [
+    #     "https://web.archive.org/web/19981205192725/http://laurasmidiheaven.simplenet.com/rockm-p.htm"
+    # ]
 
     def parse(self, response):
         # print(f"response.url: {response.url}")
@@ -49,10 +53,11 @@ class ArchiveSpider(scrapy.Spider):
         midi_urls = list(
             set([url for url in anchor_hrefs if url.lower().endswith(".mid")])
         )
+        # this is maybe a bit specific to wayback machine scraping
         # img_els = list(set([url for url in response.css("img::attr(src)").getall() if url.startswith('/web')]))#this is maybe a bit specific to wayback machine scraping
         img_els = list(
             set([url for url in response.css("img::attr(src)").getall()])
-        )  # this is maybe a bit specific to wayback machine scraping
+        ) 
 
         # lil hacky for now
         background_els = [
@@ -66,8 +71,8 @@ class ArchiveSpider(scrapy.Spider):
             yield req
 
         # download images
-        for req in initiate_download_assets(response, img_els):
-            yield req
+        # for req in initiate_download_assets(response, img_els):
+        #     yield req
 
         yield {
             "url": response.url,

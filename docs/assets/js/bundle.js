@@ -1827,10 +1827,11 @@ if (typeof exports === 'object' && typeof module === 'object')
 const Timidity = require('timidity')
 let player
 let currentlyPlaying = null
+const pathPrefix = '/midi-archive/'
 
 class MidiPlayer {
   constructor () {
-    this.player = new Timidity('assets/timidity')
+    this.player = new Timidity(pathPrefix + 'assets/timidity')
     this.player.on('playing', () => {
       console.log('currently playing', currentlyPlaying)
       console.log(player) // => 351.521

@@ -72,7 +72,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       layouts: "_layouts",
       output: "docs",
-      pathPrefix: '/midi-archive/'
-    }
+    },
+    pathPrefix: '/midi-archive'
   }
 };
