@@ -71,7 +71,9 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",
       layouts: "_layouts",
-      output: "docs"
+      output: "docs",
+      pathPrefix: '/midi-archive/'
+      // pathPrefix: isProduction ? `/midi-archive/` : `/`, 
     }
   }
 };
