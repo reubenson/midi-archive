@@ -1,8 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const glob = require('glob');
-// const { EleventyRenderPlugin } = require("@11ty/eleventy");
-// const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { exec } = require('child_process');
 
 async function readFilesInSubdirectories(pattern) {
   return new Promise((resolve, reject) => {
@@ -20,16 +19,9 @@ async function readFilesInSubdirectories(pattern) {
 
 
 module.exports = function(eleventyConfig) {
-//   eleventyConfig.addPlugin(EleventyRenderPlugin);
-//   eleventyConfig.addPassthroughCopy("splide.min.js");
-//   eleventyConfig.addPassthroughCopy("splide.min.css");
-//   eleventyConfig.addPassthroughCopy("project-slides.css");
-//   eleventyConfig.addPassthroughCopy("bundle.css");
-//   eleventyConfig.addPassthroughCopy({ "favicon.png": "/" });
   eleventyConfig.addPassthroughCopy("src/assets");
 
-  // need to add add dependencies for MIDI playback
-  // eleventyConfig.addPassthroughCopy("src/assets");
+  // add dependencies for MIDI player
   eleventyConfig.addPassthroughCopy({ "./node_modules/timidity/libtimidity.wasm": "assets/timidity/libtimidity.wasm" });
   eleventyConfig.addPassthroughCopy({ "./node_modules/freepats/Tone_000": "assets/timidity/Tone_000" });
   eleventyConfig.addPassthroughCopy({ "./node_modules/freepats/Drum_000": "assets/timidity/Drum_000" });
@@ -42,13 +34,37 @@ module.exports = function(eleventyConfig) {
 //     ).format(now);
 //   });
   eleventyConfig.addCollection("midiAssets", async function(collectionApi) {
-    midi_asset_path = 'src/assets/**/midi/*.mid';
+    const sites_data = require('./sites.json')
+    const midi_assets = {};
 
     // note: still haven't normalized filenname extensions ...
-    midi_assets = await readFilesInSubdirectories(midi_asset_path);
+    midi_files = await readFilesInSubdirectories('src/assets/**/midi/*.mid');
+    midi_files = midi_files.concat(await readFilesInSubdirectories('src/assets/**/midi/*.MID'));
 
-    // mightn want to package these up into objects that contain more metadata for the front-end
-    return midi_assets;
+    midi_files.forEach(file => {
+      const site_name = file.split('/')[2];
+
+      midi_assets[site_name] = midi_assets[site_name] || [];
+      midi_assets[site_name].push(file);
+
+      sites_data[site_name].midis = sites_data[site_name].midis || [];
+      sites_data[site_name].midis.push(file);
+    })
+
+    return sites_data;
+  });
+
+  eleventyConfig.on('afterBuild', () => {
+    console.log('Eleventy has finished building!');
+
+    exec('npm run bundle', (error, stdout, stderr) => {
+      if (error) {
+        console.error(`exec error: ${error}`);
+        return;
+      }
+      console.log(`stdout: ${stdout}`);
+      console.error(`stderr: ${stderr}`);
+    });
   });
 
   return {

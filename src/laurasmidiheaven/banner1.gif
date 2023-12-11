@@ -1,0 +1,185 @@
+---
+description: Prairie Frontier Cards
+keywords: Prairie Frontier Cards, midi, music, 90s
+layout: layout.njk
+---
+<body bgcolor="#CCCCCC" leftmargin="0" marginheight="6" marginwidth="0" onload="setcookie();" topmargin="6">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<!-- fwtable fwsrc="SNToo_indus_headergray.png" fwbase="main_gray_export.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="1" -->
+<tr>
+<td><table align="center" border="0" cellpadding="0" cellspacing="0" width="300">
+<tr>
+<td><a href="/index.html"><img alt="" border="0" height="85" name="header_logo" src="/assets/laurasmidiheaven/images/header_logo.gif" width="300"/></a></td>
+</tr>
+<tr>
+<td><img alt="" border="0" height="31" name="header_home_order_login" src="/assets/laurasmidiheaven/images/header_home_order_login.gif" usemap="#m_header_home_order_login" width="300"/></td>
+</tr>
+</table></td>
+<td><table align="center" border="0" cellpadding="0" cellspacing="0" width="180">
+<tr>
+<td><a href="../about.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r1_c2','','../images/layout/main_gray_export_r1_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f2.jpg',1)"><img alt="" border="0" height="23" name="main_gray_export_r1_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r1_c2.jpg" width="180"/></a></td>
+</tr>
+<tr>
+<td><a href="../services.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r2_c2','','../images/layout/main_gray_export_r2_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f3.jpg',1)"><img alt="" border="0" height="23" name="main_gray_export_r2_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r2_c2.jpg" width="180"/></a></td>
+</tr>
+<tr>
+<td><a href="../data_center.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r4_c2','','../images/layout/main_gray_export_r4_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f4.jpg',1)"><img alt="" border="0" height="23" name="main_gray_export_r4_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r4_c2.jpg" width="180"/></a></td>
+</tr>
+<tr>
+<td><a href="../support.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r6_c2','','../images/layout/main_gray_export_r6_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f5.jpg',1)"><img alt="" border="0" height="23" name="main_gray_export_r6_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r6_c2.jpg" width="180"/></a></td>
+</tr>
+<tr>
+<td><a href="../contact.html" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('main_gray_export_r9_c2','','../images/layout/main_gray_export_r9_c2_f2.jpg','eyeinsky','','../images/layout/eyeinsky_f6.jpg',1)"><img alt="" border="0" height="24" name="main_gray_export_r9_c2" src="/assets/laurasmidiheaven/images/main_gray_export_r9_c2.jpg" width="180"/></a></td>
+</tr>
+</table></td>
+<td><img alt="" border="0" height="116" name="eyeinsky" src="/assets/laurasmidiheaven/images/eyeinsky.jpg" width="280"/></td>
+</tr>
+<!-- InstanceBeginEditable name="TitleImage" -->
+<tr>
+<td><img alt="" border="0" height="55" name="header_title" src="/assets/laurasmidiheaven/images/welcome.gif" width="300"/></td>
+<td><img alt="" border="0" height="55" name="header_filler" src="/assets/laurasmidiheaven/images/header_filler.gif" width="180"/></td>
+<td><a href="/contact.html"><img alt="" border="0" height="55" name="header_phone" src="/assets/laurasmidiheaven/images/header_phone.gif" width="280"/></a></td>
+</tr>
+<!-- InstanceEndEditable -->
+<map name="m_header_home_order_login">
+<area alt="" coords="33,7,95,29" href="http://www.simplenet.com" shape="rect"/>
+<area alt="" coords="105,7,184,29" href="http://www.simplenet.com/order" shape="rect"/>
+<area alt="" coords="198,7,261,29" href="https://secure.simplenet.com/cp" shape="rect"/>
+</map>
+</table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="760">
+<tr>
+<td background="../images/layout/bg.gif">
+<!-- InstanceBeginEditable name="BreadCrumbs" -->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="body" -->
+<table align="center" background="../images/layout/1x1eeeeee.gif" border="0" cellpadding="5" cellspacing="0" width="725">
+<tr>
+<td align="left" valign="top">
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="0" height="120" width="700">
+<tr>
+<td align="left" width="500"><img alt="bobsimage 500 x 120" height="120" name="bobsimage" src="/assets/laurasmidiheaven/images/jump_header_ad-2.gif" width="500"/></td>
+<form action="http://af1.simplenet.com/rd.php" method="GET">
+<td align="center" background="../jump/jump_header_ds-2.gif" valign="top">
+<img height="23" src="/assets/laurasmidiheaven/images/find_name.gif" width="200"/>
+<input name="cbid" type="hidden" value="8064"/>
+<input name="url" type="hidden" value="http://www.simplenet.com/search/search.php"/>
+<input name="d" size="15" type="text"/>
+<input class="subbut" type="submit" value="GO"/>
+<div class="smbody">Find your domain in the following tlds: .com, .net, .org, .info, .biz, and .us </div>
+<div class="smbody"><br/>
+				  Already have a domain or site? <a href="http://www.simplenet.com/order/"><br/>
+				  Move it to SimpleNet</a></div>
+</td></form>
+</tr>
+</table>
+</div>
+<br/> <table align="center" border="0" cellpadding="1" cellspacing="0" width="700">
+<tr valign="top">
+<!--- package 1 --->
+<td width="250">
+<table bordercolor="#666666" cellpadding="4" cellspacing="0" class="tableborder" width="100%">
+<tr>
+<td bgcolor="#3553a9" class="bodyWHT">SimpleNet Starter</td>
+<td bgcolor="#3553a9" class="bodyWHT"> </td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="bodyRED"><strong><a href="https://cp.simplenet.com:8443/psoft/servlet/psoft.hsphere.CP?action=signup&amp;plan_id=7004&amp;signup=yes&amp;template_name=signup/begin.html&amp;domain_type=3ldomain"><img align="right" border="0" height="69" src="/assets/laurasmidiheaven/images/only499.gif" width="72"/></a>Free
+                          Third Level Domain</strong></span><strong><br/>
+yourname.simplenet.com</strong><br/>
+<br/>
+40 MB Disk Space<br/>
+            2 GB Monthly Transfer<br/>
+            2 Email Accounts<br/>
+            Microsoft FrontPage® Extensions<br/>
+            SiteStudio<br/>
+<br/> <br/>
+</td>
+<td align="left" rowspan="3" valign="top" width="1"><img height="230" src="/assets/laurasmidiheaven/images/1x1eeeeee.gif" width="1"/></td>
+</tr>
+<tr>
+<td align="center"><a href="https://cp.simplenet.com:8443/psoft/servlet/psoft.hsphere.CP?action=signup&amp;plan_id=7004&amp;signup=yes&amp;template_name=signup/begin.html&amp;domain_type=3ldomain"><img border="0" height="20" src="/assets/laurasmidiheaven/images/blue_order_but.gif" width="120"/></a></td>
+</tr>
+<tr>
+<td align="center"><strong>$5.00 Setup</strong></td>
+</tr>
+</table>
+</td>
+<!--- package 2 --->
+<td width="250"><table bordercolor="#666666" cellpadding="4" cellspacing="0" class="tableborder" width="100%">
+<tr>
+<td bgcolor="#3553a9" class="bodyWHT">SimpleNet S150</td>
+<td bgcolor="#3553a9" class="bodyWHT"> </td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="bodyRED"><strong><a href="https://cp.simplenet.com:8443/psoft/servlet/psoft.hsphere.CP?action=signup&amp;plan_id=7005&amp;signup=yes&amp;template_name=signup/begin.html"><img align="right" border="0" height="69" src="/assets/laurasmidiheaven/images/only1149.gif" width="72"/></a>Free
+                        Domain Name</strong></span><strong><br/>
+      www.yourname.com </strong><br/>
+<br/>
+      150 MB Disk Space<br/>
+      8 GB Monthly Transfer<br/>
+      10 Email Accounts<br/>
+      Microsoft FrontPage® Extensions<br/>
+      SiteStudio<br/>
+      Miva/PHP/MySQL<br/>
+      Ecommerce enabled<br/>
+</td>
+<td align="left" rowspan="3" valign="top" width="1"><img height="230" src="../images/layout/1x1eeeeee.gif" width="1"/></td>
+</tr>
+<tr>
+<td align="center"><a href="https://cp.simplenet.com:8443/psoft/servlet/psoft.hsphere.CP?action=signup&amp;plan_id=7005&amp;signup=yes&amp;template_name=signup/begin.html"><img border="0" height="20" src="/images/layout/blue_order_but.gif" width="120"/></a> </td>
+</tr>
+<tr>
+<td align="center"><strong>$15.00 Setup</strong></td>
+</tr>
+</table>
+</td>
+<!--- package 3 --->
+<td align="right" width="200">
+<table bordercolor="#666666" cellpadding="4" cellspacing="0" class="tableborder" width="100%">
+<tr>
+<td bgcolor="#3553a9" class="bodyWHT">All Accounts Feature</td>
+</tr>
+<tr>
+<td align="left" valign="top"><div align="left"><img align="right" height="230" src="../images/layout/1x1eeeeee.gif" width="1"/>- 24/7 Phone &amp; Email Support<br/>
+                        - 30-day Money Back Guarantee<br/>
+                        - Free Site Building Software<br/>
+                        - Free Statistics Software<br/>
+                        - Web Mail and POP<br/>
+                        - Redundant Web Servers<br/>                      
+                        - Revolutionary Architecture<br/>
+<br/>
+<br/>
+<a href="../why.html"><img border="0" height="94" src="/assets/laurasmidiheaven/images/jumpwhy.gif" width="188"/></a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br/> <table align="center" border="0" bordercolor="#666666" cellpadding="2" cellspacing="0" class="tableborder" width="700">
+<tr>
+<td align="center" class="bodyHeader"><a href="http://www.simplenet.com/services.html">View all of SimpleNet's Products</a></td>
+</tr>
+</table> <p> <br/>
+<span class="smbody">*Rate based on yearly pre-payment.</span></p>
+</td>
+</tr>
+</table>
+<!-- InstanceEndEditable -->
+</td>
+</tr>
+<tr>
+<td height="22" valign="top"><img height="22" src="/assets/laurasmidiheaven/images/bottom.gif" width="760"/></td>
+</tr>
+</table>
+<br/>
+<table align="center" border="0" cellpadding="10" cellspacing="0" class="footer" width="760">
+<tr>
+<td><div align="center" class="footer">COPYRIGHT © 2003 SimpleNet, Inc. 
+        | All Rights Reserved.| 619-243-3212 | <a href="/privacy.html">Privacy 
+        Statement </a> - <a href="/policies.html">Terms of Use</a> - <a href="/support.html">Support</a></div>
+</td>
+</tr>
+</table>
+</body>

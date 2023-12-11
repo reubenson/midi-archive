@@ -35,12 +35,12 @@ for d in midi_directories:
     # TO DO - normalize to .mid in advance
     midi_paths = list(Path(os.path.join(assets_path, d)).glob('**/*.mid')) + list(Path(os.path.join(assets_path, d)).glob('**/*.MID'))
     if len(midi_paths):
-        tokenizer.tokenize_midi_dataset(midi_paths, Path(os.path.join('tokens_noBPE', d)))
+        tokenizer.tokenize_midi_dataset(midi_paths, Path(os.path.join(target_dir, d)))
 
 # TO DO: explore data augmentation
 # data_augmentation_offsets = [2, 1, 1]  # data augmentation on 2 pitch octaves, 1 velocity and 1 duration values
 
 # Saving our tokenizer, to retrieve it back later with the load_params method
-token_zip_path = Path("../tokens_noBPE/tokenizer.json")
-print(f'token_zip_path: {token_zip_path}')
-tokenizer.save_params(token_zip_path)
+# token_zip_path = Path("../tokens_noBPE/tokenizer.json")
+tokenizer_path = Path(os.path.join(target_dir, '_tokenizer.json'))
+tokenizer.save_params(tokenizer_path)

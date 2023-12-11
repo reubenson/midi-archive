@@ -162,10 +162,8 @@ class HtmlPipeline:
         # add 11ty variables on top of html
         md_head = generate11tyHead()
 
-        # print(f"body: {body}")
-        # need to save body to .html file
         # filename = url.split("/")[-1] + '.html'
-        path = urlparse(url).path.split("/")[-1]
+        path = urlparse(url).path.split("/")[-1] or urlparse(url).path.split("/")[-2]
 
         # site_dir = 'prairiefrontier'
         site_dir = spider.target

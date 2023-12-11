@@ -13,6 +13,11 @@
     {# <script src="http://unpkg.com/tone"></script> #}
     {# <script src="https://unpkg.com/@tonejs/midi"></script> #}
     <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
       .midi-archive-collection {
         display: flex;
         flex-direction: row;
@@ -24,7 +29,11 @@
       }
       .midi-archive-collection-item {
         list-style: none;
+        padding: 10px;
         position: relative
+      }
+      .midi-archive-collection-item.playing {
+        border: 1px solid red;
       }
       {# this element is going to prevent .midi files from being downloaded on click #}
       .midi-archive-collection-item-surface {
@@ -35,55 +44,73 @@
         right: 0;
         z-index: 1;
       }
+
+      .container {
+        box-sizing: border-box;
+        position: absolute;
+        height: calc(100vh - 100px);
+        overflow-y: scroll;
+        padding: 10px;
+      }
+      .midi-player {
+        height: 100px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        border-top: dotted 2px;
+        padding-top: 10px;
+        box-sizing: border-box;
+      }
     </style>
   </head>
   <body>
-    {{ content | safe }}
-    <button>Play</button>
-    <section class="midi-archive">
-      <h3>There are currently {{ collections.midiAssets.length }} MIDI files in the collection!</h3>
-      <ul class="midi-archive-collection">
-        {% for asset in collections.midiAssets %}
-          <li class="midi-archive-collection-item">
-            <div class="midi-archive-collection-item-surface"></div>
-            <a class="midi-file" href="{{ asset }}">{{ asset.split('/midi/')[1] }}</a>
-          </li>
+    <div class="container">
+      {{ content | safe }}
+      <section class="neural-net-midi">
+        <p>Explore the sounds of the early web with <em>The MIDI Archive</em></p>
+      </section>
+      <section class="midi-archive">
+        {% set totalMidiCount = 0 %}
+        {% for site, data in collections.midiAssets %}
+          {% set totalMidiCount = totalMidiCount + data.midis.length %}
         {% endfor %}
-      </ul>
-    </section>
+        <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3>
+        <p>These files have been assembled here for your listening pleasure, as well as used to train a neural net model, which is used to produce a new piece of "music" every day.</p>
+        <p>I'm still tinkering with this archive and the neural net, so check back soon for more updates!</p>
+        <li class="midi-archive-collection-item">
+          <div class="midi-archive-collection-item-surface"></div>
+          <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">Listen to the most recent music hallucinated by the model</a>
+        </li>
 
-    {# <div class="cards">
-      <div class="card front">
-        <h1>Reuben Son</h1>
-        <div class="glyph"><a href="https://frogchor.us" target="_blank">𓆏</a></div>
-        <div class="container">
-          {% renderFile './src/_includes/tiny-bio.md' %}
-        </div>
-        <div class="social">
-          {% renderFile './src/_includes/social.md' %}
-        </div>
-        <div class="container-background"></div>
+        {% for site, data in collections.midiAssets %}
+          <section>
+            <h3><a href={{ data.homepage }} target="_blank">{{ data.name}}</a></h3>
+            {# <span class="dropdown">⇩</span> #}
+            <p>{{ data.description }}</p>
+            <ul class="midi-archive-collection">
+              {% for asset in data.midis %}
+                <li class="midi-archive-collection-item">
+                  <div class="midi-archive-collection-item-surface"></div>
+                  <a class="midi-file" href="{{ asset }}">{{ asset.split('/midi/')[1] }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      </section>
+    </div>
+    <div class="midi-player">
+      {# <marquee><p>To listen, click any .mid file above!</p></marquee> #}
+      <div class="midi-player-controls">
+        <button class="play-button">Play</button>
+        <button class="stop-button">Stop</button>
       </div>
-      <div class="card back">
-        <h1>Reuben Son</h1>
-        <div class="container">
-          <p>Some recent things I've made or been a primary contributor to ...</p>
-          {% renderFile './src/_includes/latest.md' %}
-        </div>
-        <div class="social">
-          <p>
-            Website last updated {{ timestamp }}
-          </p>
-        </div>
-        <div class="container-background"></div>
+      <div class="midi-player-status">
+        <marquee class="status"></marquee>
+        {# <p class="current-time">Current Time: <span class="current-time-text">0</span></p> #}
+        {# <p class="total-time">Total Time: <span class="total-time-text">0</span></p> #}
       </div>
     </div>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-120208217-1');
-    </script> #}
   </body>
 </html>

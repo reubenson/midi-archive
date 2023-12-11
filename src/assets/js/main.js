@@ -1,11 +1,50 @@
 'use-strict';
 const Timidity = require('timidity');
-const freepats = require('freepats')
+let player;
 
-const player = new Timidity('assets/timidity');
-player.on('playing', () => {
-  console.log(player.duration) // => 351.521
-})
+// const player = new Timidity('assets/timidity');
+// player.on('playing', () => {
+
+//   console.log('currently playing', currentlyPlaying)
+//   // console.log(player) // => 351.521
+// })
+
+class MidiPlayer {
+  constructor() {
+    this.player = new Timidity('assets/timidity');
+    this.player.on('playing', () => {
+      console.log('currently playing', currentlyPlaying)
+      console.log(player) // => 351.521
+    });
+    this.playButton = document.querySelector('.play-button');
+    this.playButton?.addEventListener('click', this.play.bind(this));
+    this.stopButton = document.querySelector('.stop-button');
+    this.stopButton?.addEventListener('click', this.pause.bind(this));
+    this.statusEl = document.querySelector('.status');
+    this.setStatus('Click any .mid file above to play!')
+    // this.title = null;
+  }
+
+  load(url) {
+    this.player.load(url)
+  }
+
+  play() {
+    this.player.play();
+    // this.showPause();
+  }
+
+  pause() {
+    this.player.pause();
+    // this.showPlay();
+  }
+
+  setStatus(text) {
+    this.statusEl.innerHTML = text
+  }
+}
+
+let currentlyPlaying = null;
 
 const websocketURL = 'wss://1wtfmfef4k.execute-api.us-east-2.amazonaws.com/production/';
 
@@ -44,8 +83,13 @@ const ac = new AudioContext();
 
 async function playMIDI_timidity(url) {
   console.log('url', url);
+  player.pause()
   player.load(url)
-  player.play()
+  try {
+    player.play()
+  } catch (error) {
+    console.log('error playing midi file:', error);
+  }
 }
 
 // contemplating rolling a custom MIDI player ...
@@ -69,25 +113,40 @@ async function playMIDIBadly(url) {
 
 // add hover functionality to midi files
 window.onload = function() {
+  console.log('loading player', );
+  player = new MidiPlayer();
   const midiFiles = document.querySelectorAll('.midi-archive-collection-item-surface');
   midiFiles.forEach(function(midiFile) {
     midiFile.addEventListener('click', handlePlay);
-    midiFile.addEventListener('mouseout', handlePlay);
-});
+    // midiFile.addEventListener('mouseout', handlePlay);
+  });
 }
 
 // Define the hover function
 function handlePlay(event) {
     const { target } = event; // .midi-archive-collection-item-surface
-    
-    const a = target.parentNode.querySelector('a');
+    const collectionItem = target.parentNode;
+    const a = collectionItem.querySelector('a');
 
     if (!a) {
         console.error('MIDI element not found:', a)
     }
     const href = a.getAttribute('href');
 
+    if (href === currentlyPlaying?.getAttribute('href')) return
+
     playMIDI_timidity(href);
+    
+
+    // add class to visually signify that the file is playing
+    if (!!currentlyPlaying) {
+      currentlyPlaying.classList.toggle('playing'); // turn off previous
+    }
+    collectionItem.classList.toggle('playing'); // turn on current
+    currentlyPlaying = collectionItem;
+
+    filename = href.split('/').pop();
+    player.setStatus(`now playing  <strong>${filename}</strong>`);
     // playMIDIBadly(href)
 }
 
@@ -142,8 +201,3 @@ async function _playMidiFile(url) {
     // Start the Tone.js context
     await Tone.start();
   }
-
-
-
-// read and parse MIDI file on hover, and feed into soundfont instrument
-// update lambda to push a slow stream of notes, and have them articulated by a soundfont instrument

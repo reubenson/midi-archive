@@ -3,3 +3,4 @@
 node_modules
 tokens_noBPE
 **/__pycache__
+*.zip

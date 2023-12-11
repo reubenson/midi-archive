@@ -1,6 +1,13 @@
 # midi-archive
 
-An archive of music on the web before the age of MP3s
+An archive of music on the web before the age of MP3s. This is not intended to be an extensive collection, but is instead an archive that exists alongside a [machine learning model](https://github.com/reubenson/midi-archive-lambda) that uses the archive as its corpus.
+
+## Workflow
+The current process for updating the archive is a bit manual:
+- Run the scraper tool, located in `/scraper`
+- Run the script for tokenizing all the MIDI files, at `/scripts/apply_tokenizer.py`
+- Zip up token json and upload to S3 with `/scripts/deploy_assets.sh`
+- MIDI Archive assets are now ready to be ingested by ML model
 
 ## Repository Directory Structure
 - I want to store MIDI data in the repo, but keep the filesize of the repo from ballooning too much, so there should be no repetition. 
@@ -15,7 +22,6 @@ An archive of music on the web before the age of MP3s
     - e.g. /assets/css/prairiefrontier/*
 - HTML will be transformed to have CSS and MIDI links point to the self-hosted assets
     - e.g. sites/prairiefrontier/midi.html
-    - TO DO: determine if `/sites` is the directory I want to serve static from
     - when restoring a site from Internet Archive, need to strip out IA's template
 - JavaScript usage is generally pretty limited on these site, so just gonna ignore that
 - The entirety of each site won't necessarily be scraped, since their source now exists on Internet Archive
@@ -41,10 +47,6 @@ An archive of music on the web before the age of MP3s
 - `cd scraper` (need to be in the same directory as scrapy.cfg)
 - run scraper with `scrapy crawl archive -s LOG_LEVEL=WARNING`
     - before running that command, update the target in the script
-
-To create a new spider: `scrapy genspider example example.com`
-
-## Deploying the model
 
 ### Lambda
 - [Reference for setting up Websockets API in AWS](https://docs.aws.amazon.com/apigateway/latest/developerguide/websocket-api-chat-app.html#websocket-api-chat-app-create-api)
@@ -83,3 +85,10 @@ To create a new spider: `scrapy genspider example example.com`
 ## Deploying assets
 `cd scripts`
 `./deploy_assets.sh`
+
+## Requirements
+- Each MIDI file should be traceable back to the website it came from
+- Each MIDI file should hold onto its title and its original filename
+    - Difficult to normalize this at scale, esp with how variable sites are
+- Metadata during scraping to be saved as .csv?
+- Images and HTML also to be saved, for potential future use
