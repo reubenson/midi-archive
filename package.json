@@ -7,14 +7,21 @@
     "dev": "npx @11ty/eleventy --serve",
     "zip-midi": "node scripts/zip-midi.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "browserify ./src/assets/js/main.js -o ./docs/assets/js/bundle.js"
+    "bundle": "browserify ./src/assets/js/main.js -o ./docs/assets/js/bundle.js",
+    "lint": "eslint ./src/assets/js/main.js --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "browserify": "^17.0.0"
+    "browserify": "^17.0.0",
+    "eslint": "^8.55.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.4.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "lint-staged": "^15.2.0"
   },
   "dependencies": {
     "archiver": "^6.0.1",
