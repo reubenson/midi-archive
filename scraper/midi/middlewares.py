@@ -87,25 +87,25 @@ class DownloaderMiddleware:
         url = response.url
 
         # TO DO: pull this path from spider??
-        save_dir = f'../src/assets/{spider.target}'
+        save_dir = f"../src/assets/{spider.target}"
 
         # TO DO: move this to a function
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
-        if not os.path.exists(save_dir + '/midi'):
-            os.makedirs(save_dir + '/midi')
-        if not os.path.exists(save_dir + '/images'):
-            os.makedirs(save_dir + '/images')
+        if not os.path.exists(save_dir + "/midi"):
+            os.makedirs(save_dir + "/midi")
+        if not os.path.exists(save_dir + "/images"):
+            os.makedirs(save_dir + "/images")
 
-        if response.url.lower().endswith('.mid') and response.status == 200:
+        if response.url.lower().endswith(".mid") and response.status == 200:
             file_name = os.path.basename(urlparse(url).path)
-            with open(os.path.join(save_dir + '/midi', file_name), 'wb') as f:
+            with open(os.path.join(save_dir + "/midi", file_name), "wb") as f:
                 f.write(response.body)
             print(f"Downloaded {file_name} from {response.url}")
 
-        if response.url.lower().endswith('.jpg') and response.status == 200:
+        if response.url.lower().endswith(".jpg") and response.status == 200:
             file_name = os.path.basename(urlparse(url).path)
-            with open(os.path.join(save_dir +'/images', file_name), 'wb') as f:
+            with open(os.path.join(save_dir + "/images", file_name), "wb") as f:
                 f.write(response.body)
             print(f"Downloaded {file_name} from {response.url}")
             # not sure how to prevent this response from going back into Spider parser

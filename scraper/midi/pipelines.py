@@ -11,8 +11,9 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
+
 def update_html(html, midi_files, img_files, background_files, sitename=""):
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, "html.parser")
 
     if not sitename:
         print("No sitename provided")
@@ -26,26 +27,30 @@ def update_html(html, midi_files, img_files, background_files, sitename=""):
     # print(f"midi_urls: {midi_urls}")
 
     for url in midi_files:
-        a = soup.find('a', href=url)
+        a = soup.find("a", href=url)
         # print(f"a: {a}")
         # print(f"url: {url}")
         filename = os.path.basename(urlparse(url).path)
-        a['href'] = f'/assets/{sitename}/midi/{filename}'
+        a["href"] = f"/assets/{sitename}/midi/{filename}"
 
     for url in img_files:
-        el = soup.find('img', src=url)
+        el = soup.find("img", src=url)
         # print(f"url: {url}")
-        filename = os.path.basename(urlparse(url).path.split("/")[-1]) # need to standardize this across (helper fn)
+        filename = os.path.basename(
+            urlparse(url).path.split("/")[-1]
+        )  # need to standardize this across (helper fn)
         # print(f"filename: {filename}")
-        el['src'] = f'/assets/{sitename}/images/{filename}'
+        el["src"] = f"/assets/{sitename}/images/{filename}"
         # print(f"el: {el}")
 
     for url in background_files:
-        el = soup.find('body', background=url) # TO DO generalize to any element
+        el = soup.find("body", background=url)  # TO DO generalize to any element
         # print(f"url: {url}")
-        filename = os.path.basename(urlparse(url).path.split("/")[-1]) # need to standardize this across (helper fn)
+        filename = os.path.basename(
+            urlparse(url).path.split("/")[-1]
+        )  # need to standardize this across (helper fn)
         print(f"filename: {filename}")
-        el['background'] = f'/assets/{sitename}/images/{filename}'
+        el["background"] = f"/assets/{sitename}/images/{filename}"
         # print(f"el: {el}")
 
     # for a, midi_file in zip(soup.find_all('a'), midi_files):
@@ -53,13 +58,15 @@ def update_html(html, midi_files, img_files, background_files, sitename=""):
     #     print(f"midi_file: {midi_file}")
     #     a['href'] = f'assets/midi/prariefrontier/{midi_file}'
 
-    return str(soup.find('body'))
+    return str(soup.find("body"))
+
 
 # Usage
 # html = '<html><body><a href="old_link1.midi"></a><a href="old_link2.midi"></a></body></html>'
 # midi_files = ['file1.midi', 'file2.midi']
 # new_html = update_html(html, midi_files)
-# print(new_html) 
+# print(new_html)
+
 
 def getHostFromUrl(url):
     parsed = urlparse(url)
@@ -68,6 +75,7 @@ def getHostFromUrl(url):
     # print(f"parsed.path: {parsed.path}")
     return scheme + "://" + netloc
     # return url.split("/")[0]
+
 
 def download_files(asset_urls, save_dir):
     if not os.path.exists(save_dir):
@@ -78,18 +86,19 @@ def download_files(asset_urls, save_dir):
         if response.status_code == 200:
             file_name = os.path.basename(urlparse(url).path)
             print(f"file_name: {file_name}")
-            with open(os.path.join(save_dir, file_name), 'wb') as f:
+            with open(os.path.join(save_dir, file_name), "wb") as f:
                 f.write(response.content)
             print(f"Downloaded {file_name}")
         else:
             # TO DO: handle these by marking up html
             print(f"Failed to download {url}")
 
+
 def generate11tyHead():
     # TO DO: update placeholder values
     description = "Prairie Frontier Cards"
     keywords = "Prairie Frontier Cards, midi, music, 90s"
-    layout: "layout.njk" # fine to hard-code this for now
+    layout: "layout.njk"  # fine to hard-code this for now
 
     return f"""---
 description: {description}
@@ -148,6 +157,7 @@ layout: layout.njk
 
 #         return item
 
+
 # this pipeline is responsible for downloading and processing the scraped html
 class HtmlPipeline:
     def process_item(self, item, spider):
@@ -155,10 +165,12 @@ class HtmlPipeline:
         url = item["url"]
         midi_urls = item["midi_urls"]
         img_urls = item["img_urls"]
-        background_urls = item["background_urls"]    
-        
-        new_html = update_html(html, midi_urls[:], img_urls[:], background_urls[:], sitename=spider.target)
-        
+        background_urls = item["background_urls"]
+
+        new_html = update_html(
+            html, midi_urls[:], img_urls[:], background_urls[:], sitename=spider.target
+        )
+
         # add 11ty variables on top of html
         md_head = generate11tyHead()
 
@@ -175,7 +187,7 @@ class HtmlPipeline:
 
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
-        with open(f"{save_dir}/{path.replace('.html', '.md')}", 'w') as f:
+        with open(f"{save_dir}/{path.replace('.html', '.md')}", "w") as f:
             f.write(md_head + new_html)
 
         return item
