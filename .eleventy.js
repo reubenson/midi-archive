@@ -19,7 +19,7 @@ async function readFilesInSubdirectories(pattern) {
 
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets");
+  // eleventyConfig.addPassthroughCopy("src/assets");
 
   // add dependencies for MIDI player
   eleventyConfig.addPassthroughCopy({ "./node_modules/timidity/libtimidity.wasm": "assets/timidity/libtimidity.wasm" });

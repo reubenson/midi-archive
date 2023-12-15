@@ -1,8 +1,8 @@
 {
     "sankey": {
-        "name": "Bach MIDI Sequences by John Sankey",
+        "name": "John Sankey - Harpsichordist to the Internet",
         "homepage": "http://www.jsbach.net/midi/midi_johnsankey.html",
-        "description": "John Sankey - Harpsichordist to the Internet",
+        "description": "This collection of MIDI files is hosted on <a href='http://www.jsbach.net/midi/midi_johnsankey.html'>Dave's J.S. Bach Page</a>, and it covers a portion of John Sankey's MIDI recordings. For a time, he was known as the <em>Harsichordist to the Internet</em> ...",
         "urls": []
     },
     "mahamidi": {

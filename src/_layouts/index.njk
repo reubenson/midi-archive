@@ -8,10 +8,6 @@
     <meta name="keywords" content={{ keywords }}>
     <link rel="icon" type="image/png" href="/favicon.png">
     <script src="{{'/assets/js/bundle.js' | url}}"></script>
-    {# <script src="/assets/js/main.js" defer></script> #}
-    {# <script src="/assets/js/soundfontplayer-min.js"></script> #}
-    {# <script src="http://unpkg.com/tone"></script> #}
-    {# <script src="https://unpkg.com/@tonejs/midi"></script> #}
     <style type="text/css">
       body {
         margin: 0;
@@ -62,30 +58,37 @@
         padding-top: 10px;
         box-sizing: border-box;
       }
+
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
-  <body>
-    <div class="container">
+  <body background="{{'/assets/prairiefrontier/images/embossbkgd1.jpg' | url}}" link="Navy" text="Black">     <div class="container">
       {{ content | safe }}
-      <section class="neural-net-midi">
-        <p>Explore the sounds of the early web with <em>The MIDI Archive</em></p>
-      </section>
       <section class="midi-archive">
         {% set totalMidiCount = 0 %}
         {% for site, data in collections.midiAssets %}
           {% set totalMidiCount = totalMidiCount + data.midis.length %}
         {% endfor %}
         <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3>
-        <p>These files have been assembled here for your listening pleasure, as well as used to train a neural net model, which is used to produce a new piece of "music" every day.</p>
-        <p>I'm still tinkering with this archive and the neural net, so check back soon for more updates!</p>
         <li class="midi-archive-collection-item">
           <div class="midi-archive-collection-item-surface"></div>
-          <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">Listen to the most recent music hallucinated by the model</a>
+          <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!</a>
         </li>
+        <p>Table of contents for the archive:</p>
+        <ul>
+          {% for site, data in collections.midiAssets %}
+            <li>
+              <a href="#{{site}}">{{data.name}}</a>
+            </li>
+          {% endfor %}
+        </ul>
 
         {% for site, data in collections.midiAssets %}
           <section>
-            <h3><a href={{ data.homepage }} target="_blank">{{ data.name}}</a></h3>
+            {# <h3 id="#{{ site }}"><a href="#{{ site }}">{{ data.name}}</a></h3> #}
+            <h3 id="{{ site }}"><a href={{ data.homepage }} target="_blank">{{ data.name}}</a></h3>
             {# <span class="dropdown">⇩</span> #}
             <p>{{ data.description }}</p>
             <ul class="midi-archive-collection">
@@ -102,14 +105,14 @@
     </div>
     <div class="midi-player">
       {# <marquee><p>To listen, click any .mid file above!</p></marquee> #}
-      <div class="midi-player-controls">
-        <button class="play-button">Play</button>
-        <button class="stop-button">Stop</button>
-      </div>
       <div class="midi-player-status">
-        <marquee class="status"></marquee>
+        <p class="status"></p>
         {# <p class="current-time">Current Time: <span class="current-time-text">0</span></p> #}
         {# <p class="total-time">Total Time: <span class="total-time-text">0</span></p> #}
+      </div>
+      <div class="midi-player-controls">
+        <button class="play-button">Play</button>
+        <button class="stop-button hidden">Pause</button>
       </div>
     </div>
   </body>
