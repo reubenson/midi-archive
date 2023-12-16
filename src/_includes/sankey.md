@@ -1,0 +1,3 @@
+This collection of MIDI files is hosted on [Dave's J.S. Bach Page](http://www.jsbach.net/midi/midi_johnsankey.html), and it covers a portion of John Sankey's MIDI recordings. For a time, he was known as the <em>Harsichordist to the Internet</em> ...
+
+![](/midi-archive/assets/sankey/images/johnsankey.gif)

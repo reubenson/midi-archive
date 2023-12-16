@@ -1,3 +1,4 @@
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const path = require('path');
 const fs = require('fs');
 const glob = require('glob');
@@ -19,6 +20,9 @@ async function readFilesInSubdirectories(pattern) {
 
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+  // comment out when I'm not actively actively scraping
   // eleventyConfig.addPassthroughCopy("src/assets");
 
   // add dependencies for MIDI player

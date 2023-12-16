@@ -14,7 +14,7 @@
         padding: 0;
       }
 
-      .midi-archive-collection {
+      .midi-archive-collection-items {
         display: flex;
         flex-direction: row;
         justify-content: space-between; /* Aligns items along the horizontal line */
@@ -39,6 +39,10 @@
         left: 0;
         right: 0;
         z-index: 1;
+      }
+
+      .midi-archive-collection-item-surface:hover {
+        cursor: grab;
       }
 
       .container {
@@ -86,12 +90,14 @@
         </ul>
 
         {% for site, data in collections.midiAssets %}
-          <section>
+          <div class="midi-archive-collection">
             {# <h3 id="#{{ site }}"><a href="#{{ site }}">{{ data.name}}</a></h3> #}
             <h3 id="{{ site }}"><a href={{ data.homepage }} target="_blank">{{ data.name}}</a></h3>
+            {% set descriptionSource = ["./src/_includes/", site, ".md"] | join %}
+            {% renderFile descriptionSource %}
             {# <span class="dropdown">⇩</span> #}
-            <p>{{ data.description }}</p>
-            <ul class="midi-archive-collection">
+            {# <p>{{ data.description }}</p> #}
+            <ul class="midi-archive-collection-items">
               {% for asset in data.midis %}
                 <li class="midi-archive-collection-item">
                   <div class="midi-archive-collection-item-surface"></div>
@@ -99,7 +105,7 @@
                 </li>
               {% endfor %}
             </ul>
-          </section>
+          </div>
         {% endfor %}
       </section>
     </div>
