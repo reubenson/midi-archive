@@ -1,6 +1,6 @@
 ---
-description: TKTKT
-keywords: TKTKTKTK
+description: The MIDI Archive
+keywords: MIDI, machine learning, archive
 layout: index.njk
 ---
 Archives seem to have come into a kind of fashion as of late. In an age of existential precarity, they seem to offer solace in feeling knowable, certain, and grounding. The training procedures of AI foundation models like GPT have a close relationship with archives too, but instead rely on their accessibility, volume, and givenness, which allows archives to be composed and instrumentalized as training sets. 
