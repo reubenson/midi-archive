@@ -34,6 +34,12 @@ class MidiPlayer {
     const fileSurfaceEl = midiFiles[index]
     const fileEl = fileSurfaceEl.parentNode.querySelector('a')
 
+    fileEl.scrollIntoView({ behavior: 'smooth' }) // should move this elsewhere
+    fileSurfaceEl.parentNode.classList.toggle('playing')
+    // need to wait for previous scroll action to finish
+    // const container = document.querySelector('.container')
+    // container?.scrollBy({ behavior: 'smooth', top: 60 })
+
     return fileEl.getAttribute('href')
   }
 
@@ -54,13 +60,11 @@ class MidiPlayer {
   }
 
   play () {
-    console.log('here')
     this.player.play()
     this.playButton.classList.toggle('hidden', true)
     this.pauseButton.classList.toggle('hidden', false)
     const filename = this.url.split('/').pop()
     this.setStatus(`now playing  <strong>${filename}</strong>`)
-    // this.showPause();
   }
 
   pause () {

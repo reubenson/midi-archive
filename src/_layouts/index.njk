@@ -12,6 +12,7 @@
       body {
         margin: 0;
         padding: 0;
+        font-family: Courier New, monospace;
         {# font-family: monospace; #}
         letter-spacing: .1px;
         {# font-family: system-ui; #}
@@ -28,14 +29,54 @@
         line-height: 19px;
       }
 
-      .introduction p{
+      .introduction p {
+        font-style: italic;
         margin: 10px;
+      }
+
+      {# .introduction header {
+        background-image: url({{'/assets/prairiefrontier/images/embossbkgd1.jpg' | url}})
+      } #}
+
+      a {
+        color: black;
+        border-bottom: solid black 1px;
+        text-decoration: none;
+      }
+
+      .introduction .guild {
+        float: right;
+      }
+
+      h1, h2, h3 {
+        margin: 0 0 20px;
+        font-family: cursive;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .spacer {
+        height: 30px;
+        top: 0;
+      }
+
+      .border {
+        border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round;
+        position: absolute;
+        top: 0;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        height: calc(100vh - 100px);
+        width: 100vw;
       }
 
       .midi-archive-collection {
         {# .broider { #}
-        border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round;
-        border-width: 28px;
+        {# border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round; #}
+        border-width: 2px;
         border-style: solid;
         padding: 20px;
         margin: 0 0 40px;
@@ -48,15 +89,16 @@
       .midi-archive-collection-items {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; /* Aligns items along the horizontal line */
-        align-items: center; /* Aligns items along the vertical line */
-        flex-wrap: wrap; /* Allows the items to wrap onto multiple lines */
-        gap: 10px; 
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2px; 
         padding: 0;
       }
       .midi-archive-collection-item {
+        font-size: 6px;
         list-style: none;
-        padding: 10px;
+        padding: 1px;
         position: relative
       }
       .midi-archive-collection-item.playing {
@@ -79,20 +121,30 @@
       .container {
         box-sizing: border-box;
         position: absolute;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 160px);
         overflow-y: scroll;
-        padding: 10px;
+        {# margin: 60px; #}
+        {# border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round; #}
       }
+
+      .content {
+        margin: 10px 60px;
+      }
+
       .midi-player {
+        background-image: url({{'/assets/prairiefrontier/images/embossbkgd1.jpg' | url}});
         height: 100px;
         position: fixed;
         bottom: 0;
         width: 100%;
         text-align: center;
-        border-top: dotted 2px;
         padding-top: 10px;
         box-sizing: border-box;
       }
+
+      {# .midi-player .status {
+        margin-top: 0;
+      } #}
 
       .hidden {
         display: none;
@@ -107,61 +159,69 @@
       }
     </style>
   </head>
-  <body background="{{'/assets/prairiefrontier/images/embossbkgd1.jpg' | url}}" link="Navy" text="Black">
+  <body>
+    <div class="spacer"></div>
+    <div class="border"></div>
     <div class="container">
-      <section class="introduction">
-        {{ content | safe }}
-      </section>
-      <section class="midi-archive">
-        {% set totalMidiCount = 0 %}
-        {% for site, data in collections.midiAssets %}
-          {% set totalMidiCount = totalMidiCount + data.midis.length %}
-        {% endfor %}
-        <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3>
-        <li class="midi-archive-collection-item">
-          <div class="midi-archive-collection-item-surface"></div>
-          <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!</a>
-        </li>
-        <p>Table of contents for the archive:</p>
-        <ul>
+      <div class="content">
+        <section class="introduction">
+          <header>
+            <img src="{{'/assets/images/midi-ring.gif' | url}}" class="guild"/>
+            <h1>Explore the sounds of the early web with The MIDI Archive</h1>
+            <h3>Searching the future for what resides in the past</h2>
+          </header>
+          {{ content | safe }}
+        </section>
+        <section class="midi-archive">
+          {% set totalMidiCount = 0 %}
           {% for site, data in collections.midiAssets %}
-            <li>
-              <a href="#{{site}}">{{data.name}}</a>
-            </li>
+            {% set totalMidiCount = totalMidiCount + data.midis.length %}
           {% endfor %}
-        </ul>
+          <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3>
+          <li class="midi-archive-collection-item">
+            <div class="midi-archive-collection-item-surface"></div>
+            <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!</a>
+          </li>
+          <p>Table of contents for the archive:</p>
+          <ul>
+            {% for site, data in collections.midiAssets %}
+              <li>
+                <a href="#{{site}}">{{data.name}}</a>
+              </li>
+            {% endfor %}
+          </ul>
 
-        {% for site, data in collections.midiAssets %}
-          <div class="midi-archive-collection {{ site }}">
-            {# <h3 id="#{{ site }}"><a href="#{{ site }}">{{ data.name}}</a></h3> #}
-            <h3 class="midi-archive-collection-header" id="{{ site }}"><a href={{ data.homepage }} target="_blank">{{ data.name}}</a></h3>
-            {% set descriptionSource = ["./src/_includes/", site, ".md"] | join %}
-            {% renderFile descriptionSource %}
-            {# <span class="dropdown">⇩</span> #}
-            {# <p>{{ data.description }}</p> #}
-            <ul class="midi-archive-collection-items">
-              {% for asset in data.midis %}
-                <li class="midi-archive-collection-item">
-                  <div class="midi-archive-collection-item-surface"></div>
-                  <a class="midi-file" href="{{ asset | url }}">{{ asset.split('/midi/')[1] }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        {% endfor %}
-      </section>
+          {% for site, data in collections.midiAssets %}
+            <div class="midi-archive-collection {{ site }}">
+              {# <h3 id="#{{ site }}"><a href="#{{ site }}">{{ data.name}}</a></h3> #}
+              <h3 class="midi-archive-collection-header" id="{{ site }}"><a href={{ data.homepage }} target="_blank">{{ data.name}}</a></h3>
+              {% set descriptionSource = ["./src/_includes/", site, ".md"] | join %}
+              {% renderFile descriptionSource %}
+              {# <span class="dropdown">⇩</span> #}
+              {# <p>{{ data.description }}</p> #}
+              <ul class="midi-archive-collection-items">
+                {% for asset in data.midis %}
+                  <li class="midi-archive-collection-item">
+                    <div class="midi-archive-collection-item-surface" id="{{asset}}"></div>
+                    <a class="midi-file" href="{{ asset | url }}">{{ asset.split('/midi/')[1] }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </section>
+      </div>
     </div>
     <div class="midi-player">
-      {# <marquee><p>To listen, click any .mid file above!</p></marquee> #}
-      <div class="midi-player-status">
-        <p class="status"></p>
-        {# <p class="current-time">Current Time: <span class="current-time-text">0</span></p> #}
-        {# <p class="total-time">Total Time: <span class="total-time-text">0</span></p> #}
-      </div>
       <div class="midi-player-controls">
         <button class="play-button">Play</button>
         <button class="stop-button hidden">Pause</button>
         <button class="random-button">Random</button>
+      </div>
+      <div class="midi-player-status">
+        <p class="status"></p>
+        {# <p class="current-time">Current Time: <span class="current-time-text">0</span></p> #}
+        {# <p class="total-time">Total Time: <span class="total-time-text">0</span></p> #}
       </div>
     </div>
   </body>
