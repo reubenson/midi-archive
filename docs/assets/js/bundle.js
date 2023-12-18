@@ -1859,8 +1859,10 @@ class MidiPlayer {
     const fileSurfaceEl = midiFiles[index]
     const fileEl = fileSurfaceEl.parentNode.querySelector('a')
 
-    fileEl.scrollIntoView({ behavior: 'smooth' }) // should move this elsewhere
+    // should move this elsewhere, not in scope for getting a url
     fileSurfaceEl.parentNode.classList.toggle('playing')
+    updateCurrentlyPlaying(fileEl.parentNode)
+    fileEl.scrollIntoView({ behavior: 'smooth' })
     // need to wait for previous scroll action to finish
     // const container = document.querySelector('.container')
     // container?.scrollBy({ behavior: 'smooth', top: 60 })
@@ -1928,18 +1930,27 @@ function handleClick (event) {
   if (href === currentlyPlaying?.getAttribute('href')) return
 
   player.playFromArchive(href)
-  // player.load(href)
-  // player.play()
 
-  // add class to visually signify that the file is playing
-  if (currentlyPlaying) {
-    currentlyPlaying.classList.toggle('playing') // turn off previous
-  }
-  collectionItem.classList.toggle('playing') // turn on current
-  currentlyPlaying = collectionItem
+  // // add class to visually signify that the file is playing
+  // if (currentlyPlaying) {
+  //   currentlyPlaying.classList.toggle('playing') // turn off previous
+  // }
+  // collectionItem.classList.toggle('playing') // turn on current
+  // currentlyPlaying = collectionItem
+  updateCurrentlyPlaying(collectionItem)
 
   // const filename = href.split('/').pop()
   // player.setStatus(`now playing  <strong>${filename}</strong>`)
+}
+
+function updateCurrentlyPlaying (item) {
+  // add class to visually signify that the file is playing
+  console.log('item update', item)
+  if (currentlyPlaying) {
+    currentlyPlaying.classList.toggle('playing', false) // turn off previous
+  }
+  item.classList.toggle('playing', true) // turn on current
+  currentlyPlaying = item
 }
 
 },{"timidity":6}]},{},[8]);

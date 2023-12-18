@@ -46,6 +46,15 @@
 
       .introduction .guild {
         float: right;
+        font-size: 10px;
+        margin-right: -20px;
+        text-align: center;
+      }
+
+      .wow {
+        text-align: center;
+        margin: 10px auto;
+        display: block;
       }
 
       h1, h2, h3 {
@@ -103,7 +112,13 @@
       }
       .midi-archive-collection-item.playing {
         border: 1px solid red;
+        font-size: 48px;
       }
+
+      .nn-output.midi-archive-collection-item {
+        font-size: 16px;
+      }
+
       {# this element is going to prevent .midi files from being downloaded on click #}
       .midi-archive-collection-item-surface {
         position: absolute;
@@ -166,7 +181,10 @@
       <div class="content">
         <section class="introduction">
           <header>
-            <img src="{{'/assets/images/midi-ring.gif' | url}}" class="guild"/>
+            <figure class="guild">
+              <img src="{{'/assets/images/midi-ring.gif' | url}}" />
+              <figcaption>Source: <a href="https://www.ubikmusic.com/midiring/" target=_blank>The MIDI Webring</a></figcaption>
+            </figure>
             <h1>Explore the sounds of the early web with The MIDI Archive</h1>
             <h3>Searching the future for what resides in the past</h2>
           </header>
@@ -178,7 +196,7 @@
             {% set totalMidiCount = totalMidiCount + data.midis.length %}
           {% endfor %}
           <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3>
-          <li class="midi-archive-collection-item">
+          <li class="midi-archive-collection-item nn-output">
             <div class="midi-archive-collection-item-surface"></div>
             <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!</a>
           </li>
@@ -211,6 +229,7 @@
           {% endfor %}
         </section>
       </div>
+      <img src="{{'/assets/images/html-writers-guild.gif' | url}}" class="wow"/>
     </div>
     <div class="midi-player">
       <div class="midi-player-controls">

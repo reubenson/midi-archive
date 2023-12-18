@@ -3,9 +3,14 @@ description: TKTKT
 keywords: TKTKTKTK
 layout: index.njk
 ---
-Archives seem to have come into a kind of fashion as of late. In an age of existential precarity, they seem to offer solace in feeling knowable, certain, and grounding. The training procedures of AI foundation models like GPT have a close relationship with archives too, but instead need their accessibility, volume, and givenness, which allows archives to be composed and instrumentalized as training sets. Beyond the veil of nostalgia, a home to which one cannot return, this project presents a naive machine learning model alongside an informal archive of music from the early web. I developed this project during my residency at [Recurse Center](https://recurse.com) in the fall of 2023 to explore the fundamentals of each, and how they interact with each other.
+Archives seem to have come into a kind of fashion as of late. In an age of existential precarity, they seem to offer solace in feeling knowable, certain, and grounding. The training procedures of AI foundation models like GPT have a close relationship with archives too, but instead rely on their accessibility, volume, and givenness, which allows archives to be composed and instrumentalized as training sets. 
 
-The MIDI files collected here and used to train the model were once very new. In sifting through them, I've been searching for the feeling of technological transformation in an earlier age, how they unify the possibilties of new aesthetic experiences with the technics of producing and distributing this particular format of media. In both machine learning and the archive, there exist archetypes of transformation and conservation, containers for the hopes and fears about how we ourselves may change.
+The MIDI files collected here and used to train the model were once very new. In sifting through them, I've been searching for the feeling of technological transformation in an earlier age, how they combine the possibilties of new aesthetic experiences with the technics of producing and distributing this particular format of media. 
+
+<!-- Beyond the veil of nostalgia, a home to which one cannot return, this project presents a naive machine learning model alongside an informal archive of music from the early web.  -->
+
+I developed this project during my residency at [Recurse Center](https://recurse.com) in the fall of 2023 to explore broad themes of how our relationship to technology is difficult to distinguish from how we think about time. In both machine learning and the archive, there exist archetypes of transformation and conservation, containers for the hopes and fears about how we ourselves may change.
+
 
 <!-- No one questions the _transformational_ quality of current state of the art in AI, but how do our fears and fantasies of this transformation align with the other kinds of transformations we routinely experience, when we shop for home goods or develop a crush on someone? -->
 <!-- - This website is, in a sense, an archive of archives, the aggregation of many personal collections.  -->
