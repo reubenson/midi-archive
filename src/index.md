@@ -9,8 +9,7 @@ The MIDI files collected here and used to train the model were once very new. In
 
 <!-- Beyond the veil of nostalgia, a home to which one cannot return, this project presents a naive machine learning model alongside an informal archive of music from the early web.  -->
 
-I developed this project during my residency at [Recurse Center](https://recurse.com) in the fall of 2023 to explore broad themes of how our relationship to technology is difficult to distinguish from how we think about time. In both machine learning and the archive, there exist archetypes of transformation and conservation, containers for the hopes and fears about how we ourselves may change.
-
+I developed this project during my residency at [Recurse Center](https://recurse.com) in the fall of 2023 as an exploration of the dynamics between building an archive and building a machine learning model. The media ecosystem that emerges from widespread usage of generative AI feels unknowable at this time, but looking back to the brief window of time when music on the web was dominated by MIDI may tell us something about what drives humans to develop, use, and share technology. In machine learning and the archive, there exist archetypes of transformation and conservation, containers for the hopes and fears about how we ourselves may change.
 
 <!-- No one questions the _transformational_ quality of current state of the art in AI, but how do our fears and fantasies of this transformation align with the other kinds of transformations we routinely experience, when we shop for home goods or develop a crush on someone? -->
 <!-- - This website is, in a sense, an archive of archives, the aggregation of many personal collections.  -->

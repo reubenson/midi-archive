@@ -1834,15 +1834,14 @@ class MidiPlayer {
   constructor () {
     this.player = new Timidity(pathPrefix + 'assets/timidity')
     this.player.on('playing', () => {
-      console.log('currently playing', currentlyPlaying)
-      console.log(player) // => 351.521
-      this.duration = player.duration
-      console.log('player.duration', player.duration)
+      this.duration = this.player.duration
     })
 
     this.player.on('ended', () => {
       this.playerStatus = 'finished playing'
       this.setStatus()
+      this.playButton.classList.toggle('hidden', false)
+      this.pauseButton.classList.toggle('hidden', true)
     })
 
     this.playButton = document.querySelector('.play-button')
@@ -1860,7 +1859,7 @@ class MidiPlayer {
   }
 
   getRandomSongUrl () {
-    console.log('midiFiles.length', midiFiles.length);
+    console.log('midiFiles.length', midiFiles.length)
     if (!midiFiles.length) {
       midiFiles = document.getElementsByClassName('midi-archive-collection-item-surface')
     }
