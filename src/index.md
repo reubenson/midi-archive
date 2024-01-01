@@ -1,16 +1,17 @@
 ---
 title: The MIDI Archive
-description: Searching the future for what resides in the past ... Explore the sounds of the early web with the MIDI Archive
+description: Explore the sites and sounds of the early web with AI
 keywords: MIDI, machine learning, archive
 layout: index.njk
 ---
+### Searching the future for what resides in the past ... 
 Archives seem to have come into a kind of fashion as of late. In an age of planetary-scale existential precarity, they seem to offer solace in feeling knowable, certain, and grounding. The training procedures of AI foundation models like GPT have a close relationship with archives too, but instead rely on their accessibility, volume, and givenness, which allows archives to be composed and instrumentalized as training sets. 
 
 The MIDI files collected here and used to train the model were once very new. In sifting through them, I've been searching for the feeling of technological transformation in an earlier age, how they combine the possibilties of new aesthetic experiences with the technics of producing and distributing this particular format of media. 
 
-<!-- Beyond the veil of nostalgia, a home to which one cannot return, this project presents a naive machine learning model alongside an informal archive of music from the early web.  -->
-
 I developed this project during my residency at [Recurse Center](https://recurse.com) in the fall of 2023 as an exploration of the dynamics between building an archive and building a machine learning model. The media ecosystem that emerges from widespread usage of generative AI feels unknowable at this time, but looking back to the brief window of time when music on the web was dominated by MIDI may tell us something about what drives humans to develop, use, and share technology. In both machine learning and the archive, there exist archetypes of transformation and conservation, which serve as carrier for the hopes and fears about how we ourselves may change.
+
+<!-- Beyond the veil of nostalgia, a home to which one cannot return, this project presents a naive machine learning model alongside an informal archive of music from the early web.  -->
 
 <!-- No one questions the _transformational_ quality of current state of the art in AI, but how do our fears and fantasies of this transformation align with the other kinds of transformations we routinely experience, when we shop for home goods or develop a crush on someone? -->
 <!-- - This website is, in a sense, an archive of archives, the aggregation of many personal collections.  -->

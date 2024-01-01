@@ -30,9 +30,16 @@
         line-height: 19px;
       }
 
-      .introduction p {
+      .introduction {
+        {# font-style: italic; #}
+        margin: auto;
+        max-width: 1024px;
+      }
+
+      .introduction-quote {
         font-style: italic;
-        margin: 10px 0 0;
+        margin: auto;
+        max-width: 768px;
       }
 
       {# .introduction header {
@@ -45,7 +52,7 @@
         text-decoration: none;
       }
 
-      .introduction .guild {
+      .guild {
         float: right;
         font-size: 10px;
         margin: 0;
@@ -77,6 +84,10 @@
         font-size: 32px;
       }
 
+      h3 {
+        margin-top: 30px;
+      }
+
       .spacer {
         height: 30px;
         top: 0;
@@ -84,12 +95,12 @@
 
       .border {
         border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round;
-        position: absolute;
+        position: fixed;
         top: 0;
-        bottom: 100px;
+        bottom: 120px;
         left: 0;
         right: 0;
-        height: calc(100vh - 120px);
+        {# height: calc(100vh - 120px); #}
         width: 100vw;
       }
 
@@ -120,9 +131,9 @@
         padding: 0;
       }
       .midi-archive-collection-item {
-        font-size: 6px;
+        font-size: 7px;
         list-style: none;
-        padding: 1px;
+        padding: 0;
         position: relative;
         text-transform: uppercase;
         word-wrap: break-word;
@@ -144,6 +155,7 @@
       .container {
         box-sizing: border-box;
         position: absolute;
+        {# bottom: 180px; #}
         height: calc(100vh - 180px);
         overflow-y: scroll;
         {# margin: 60px; #}
@@ -199,28 +211,27 @@
     <div class="border"></div>
     <div class="container">
       <div class="content">
+        <header>
+          <figure class="guild">
+            <img src="{{'/assets/images/midi-ring.gif' | url}}" />
+            <figcaption>Source: <a href="https://www.ubikmusic.com/midiring/" target=_blank>The MIDI Webring</a></figcaption>
+          </figure>
+          <h1>{{ title }}</h1>
+        </header>
         <section class="introduction">
-          <header>
-            <figure class="guild">
-              <img src="{{'/assets/images/midi-ring.gif' | url}}" />
-              <figcaption>Source: <a href="https://www.ubikmusic.com/midiring/" target=_blank>The MIDI Webring</a></figcaption>
-            </figure>
-            <h1>{{ title }}</h1>
-            <h3>{{ description }}</h3>
-          </header>
+          <h3>{{ description }}</h3>
+          <p class="introduction-quote">"I listened to the music. It was hideous. I have never heard anything like it. It was distorted, diabolical, without sense or meaning, except, perhaps, an alien, disconcerting meaning that should never have been there. I could believe only with the greatest effort that it had once been a Bach Fugue, part of a most orderly and respected work." - Philip K. Dick, <a href="https://sickmyduck.narod.ru/pkd097-0.html"><em>The Preserving Machine</em></a></p>
           {{ content | safe }}
+          <li class="midi-archive-collection-item nn-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
+            In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!
+          </li>
         </section>
         <section class="midi-archive">
-          {% set totalMidiCount = 0 %}
+          {# {% set totalMidiCount = 0 %}
           {% for site, data in collections.midiAssets %}
             {% set totalMidiCount = totalMidiCount + data.midis.length %}
           {% endfor %}
-          <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3>
-          <li class="midi-archive-collection-item nn-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
-            In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!
-            {# <div class="midi-archive-collection-item-surface"></div> #}
-            {# <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!</a> #}
-          </li>
+          <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3> #}
           
           {# <p>Table of contents for the archive:</p>
           <ul>
