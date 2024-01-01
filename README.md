@@ -1,6 +1,8 @@
 # midi-archive
 
-An archive of music on the web before the age of MP3s. This is not intended to be an extensive collection, but is instead an archive that exists alongside a companion [machine learning model](https://github.com/reubenson/midi-archive-lambda) that uses the archive as its corpus.
+An informal archive of music on the web before the age of MP3s. This is not intended to be comprehensive, but is instead an archive that exists alongside a companion [machine learning model](https://github.com/reubenson/midi-archive-lambda) that uses the archive as its corpus.
+
+This repository implements [Scrapy](https://docs.scrapy.org/en/latest/) to collect MIDI files from websites before Y2K, and [Eleventy](https://www.11ty.dev/) as a static site generator for serving what is currently a very bare bones webpage.
 
 ### Workflow
 The current process for updating the archive is a bit manual:

@@ -10,6 +10,7 @@
     <script src="{{'/assets/js/bundle.js' | url}}"></script>
     <style type="text/css">
       body {
+        {# background-color: #f0f0e6; #}
         margin: 0;
         padding: 0;
         font-family: Courier New, monospace;
@@ -31,7 +32,7 @@
 
       .introduction p {
         font-style: italic;
-        margin: 10px;
+        margin: 10px 0 0;
       }
 
       {# .introduction header {
@@ -47,8 +48,18 @@
       .introduction .guild {
         float: right;
         font-size: 10px;
-        margin-right: -20px;
+        margin: 0;
+        {# margin-right: -20px; #}
         text-align: center;
+      }
+
+      .guild img {
+        height: 80px;
+        {# rotate: 90deg; #}
+      }
+
+      .guild figcaption {
+        font-size: 7px;
       }
 
       .wow {
@@ -78,27 +89,31 @@
         bottom: 100px;
         left: 0;
         right: 0;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 120px);
         width: 100vw;
       }
 
       .midi-archive-collection {
         {# .broider { #}
         {# border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round; #}
-        border-width: 2px;
-        border-style: solid;
-        padding: 20px;
+        {# border-width: 2px; #}
+        {# border-style: solid; #}
+        border-top: solid black 2px;
+        {# padding: 20px; #}
         margin: 0 0 40px;
+        max-width: calc(100vw - 80px);
       }
 
       .midi-archive-collection-header {
+        margin-top: 20px;
+        padding: 60px;
         text-align: center;
       }
 
       .midi-archive-collection-items {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         gap: 2px; 
@@ -108,7 +123,10 @@
         font-size: 6px;
         list-style: none;
         padding: 1px;
-        position: relative
+        position: relative;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        max-width: 100%;
       }
       .midi-archive-collection-item.playing {
         border: 1px solid red;
@@ -119,36 +137,29 @@
         font-size: 16px;
       }
 
-      {# this element is going to prevent .midi files from being downloaded on click #}
-      .midi-archive-collection-item-surface {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-      }
-
-      .midi-archive-collection-item-surface:hover {
+      .midi-archive-collection-item:hover {
         cursor: grab;
       }
 
       .container {
         box-sizing: border-box;
         position: absolute;
-        height: calc(100vh - 160px);
+        height: calc(100vh - 180px);
         overflow-y: scroll;
         {# margin: 60px; #}
         {# border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round; #}
       }
 
       .content {
-        margin: 10px 60px;
+        margin: 10px 40px;
       }
 
       .midi-player {
         background-image: url({{'/assets/prairiefrontier/images/embossbkgd1.jpg' | url}});
-        height: 100px;
+        border: solid black 4px;
+        border-top: 0;
+        font-size: 12px;
+        height: 120px;
         position: fixed;
         bottom: 0;
         width: 100%;
@@ -157,20 +168,29 @@
         box-sizing: border-box;
       }
 
-      {# .midi-player .status {
-        margin-top: 0;
-      } #}
-
       .hidden {
         display: none;
       }
 
       {# collection-specific styling #}
-      .midi-archive-collection.sankey .midi-archive-collection-items {
+      .midi-archive-collection.sankey .midi-archive-collection-header {
         background-image: url(/midi-archive/assets/sankey/images/background.gif);
-      }
-      .midi-archive-collection.sankey .midi-file {
         color: white
+      }
+
+      .midi-archive-collection.sankey .midi-archive-collection-header a {
+        color: white
+      }
+
+      @media (min-width: 768px) {
+        .content {
+          margin: 10px 60px;
+        }
+
+        .guild img {
+          height: 80px;
+          {# rotate: 90deg; #}
+        }
       }
     </style>
   </head>
@@ -185,8 +205,8 @@
               <img src="{{'/assets/images/midi-ring.gif' | url}}" />
               <figcaption>Source: <a href="https://www.ubikmusic.com/midiring/" target=_blank>The MIDI Webring</a></figcaption>
             </figure>
-            <h1>Explore the sounds of the early web with The MIDI Archive</h1>
-            <h3>Searching the future for what resides in the past</h2>
+            <h1>{{ title }}</h1>
+            <h3>{{ description }}</h3>
           </header>
           {{ content | safe }}
         </section>
@@ -196,18 +216,20 @@
             {% set totalMidiCount = totalMidiCount + data.midis.length %}
           {% endfor %}
           <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3>
-          <li class="midi-archive-collection-item nn-output">
-            <div class="midi-archive-collection-item-surface"></div>
-            <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!</a>
+          <li class="midi-archive-collection-item nn-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
+            In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!
+            {# <div class="midi-archive-collection-item-surface"></div> #}
+            {# <a href="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!</a> #}
           </li>
-          <p>Table of contents for the archive:</p>
+          
+          {# <p>Table of contents for the archive:</p>
           <ul>
             {% for site, data in collections.midiAssets %}
               <li>
                 <a href="#{{site}}">{{data.name}}</a>
               </li>
             {% endfor %}
-          </ul>
+          </ul> #}
 
           {% for site, data in collections.midiAssets %}
             <div class="midi-archive-collection {{ site }}">
@@ -219,9 +241,10 @@
               {# <p>{{ data.description }}</p> #}
               <ul class="midi-archive-collection-items">
                 {% for asset in data.midis %}
-                  <li class="midi-archive-collection-item">
-                    <div class="midi-archive-collection-item-surface" id="{{asset}}"></div>
-                    <a class="midi-file" href="{{ asset | url }}">{{ asset.split('/midi/')[1] }}</a>
+                  <li class="midi-archive-collection-item" id="{{ asset }}" data-src="{{ asset | url }}">
+                    {{ asset.split('/midi/')[1] }}
+                    {# <div class="midi-archive-collection-item-surface" id="{{asset}}"></div> #}
+                    {# <a class="midi-file" href="{{ asset | url }}">{{ asset.split('/midi/')[1] }}</a> #}
                   </li>
                 {% endfor %}
               </ul>
