@@ -9,7 +9,13 @@ class MidiPlayer {
   constructor () {
     this.player = new Timidity(pathPrefix + 'assets/timidity')
     this.player.on('playing', () => {
+      console.log('this.player', this.player)
       this.duration = this.player.duration
+    })
+
+    this.player.on('error', (err) => {
+      console.log('this.player', this.player)
+      console.error(err)
     })
 
     this.player.on('ended', () => {
@@ -65,7 +71,6 @@ class MidiPlayer {
   }
 
   load (url) {
-    console.log('url', url);
     try {
       this.player.load(url)
     } catch (error) {
