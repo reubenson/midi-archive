@@ -1838,7 +1838,8 @@ class MidiPlayer {
       this.duration = this.player.duration
     })
 
-    player.on('error', (err) => {
+    this.player.on('error', (err) => {
+      console.log('this.player', this.player)
       console.error(err)
     })
 
