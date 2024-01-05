@@ -222,9 +222,9 @@
           <h3>{{ description }}</h3>
           <p class="introduction-quote">"I listened to the music. It was hideous. I have never heard anything like it. It was distorted, diabolical, without sense or meaning, except, perhaps, an alien, disconcerting meaning that should never have been there. I could believe only with the greatest effort that it had once been a Bach Fugue, part of a most orderly and respected work." - Philip K. Dick, <a href="https://sickmyduck.narod.ru/pkd097-0.html"><em>The Preserving Machine</em></a></p>
           {{ content | safe }}
-          <li class="midi-archive-collection-item nn-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
+          {# <li class="midi-archive-collection-item nn-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
             In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!
-          </li>
+          </li> #}
         </section>
         <section class="midi-archive">
           {# {% set totalMidiCount = 0 %}
@@ -241,6 +241,17 @@
               </li>
             {% endfor %}
           </ul> #}
+          <div class="midi-archive-collection neural-net">
+            <h3 class="midi-archive-collection-header">Neural Net</h3>
+            <ul class="midi-archive-collection-items">
+              <li class="midi-archive-collection-item nn-output" id="neural-net-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
+                In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!
+              </li>
+              {# <li class="midi-archive-collection-item" id="{{ asset }}" data-src="{{ asset | url }}">
+                Neural Net output
+              </li> #}
+            </ul>
+          </div>
 
           {% for site, data in collections.midiAssets %}
             <div class="midi-archive-collection {{ site }}">
@@ -254,8 +265,6 @@
                 {% for asset in data.midis %}
                   <li class="midi-archive-collection-item" id="{{ asset }}" data-src="{{ asset | url }}">
                     {{ asset.split('/midi/')[1] }}
-                    {# <div class="midi-archive-collection-item-surface" id="{{asset}}"></div> #}
-                    {# <a class="midi-file" href="{{ asset | url }}">{{ asset.split('/midi/')[1] }}</a> #}
                   </li>
                 {% endfor %}
               </ul>
@@ -270,9 +279,13 @@
         <button class="play-button">Play</button>
         <button class="stop-button hidden">Pause</button>
         <button class="random-button">Random</button>
+        <button class="ai-button">Play AI</button>
       </div>
       <div class="midi-player-status">
         <p class="status"></p>
+        <p>
+          <a class="share"></a>
+        </p>
         {# <p class="current-time">Current Time: <span class="current-time-text">0</span></p> #}
         {# <p class="total-time">Total Time: <span class="total-time-text">0</span></p> #}
       </div>
