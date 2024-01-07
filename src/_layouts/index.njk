@@ -30,6 +30,12 @@
         line-height: 19px;
       }
 
+      .content header {
+        margin: auto;
+        text-align: center;
+        {# max-width: 240px; #}
+      }
+
       .introduction {
         {# font-style: italic; #}
         margin: auto;
@@ -53,20 +59,28 @@
       }
 
       .guild {
-        float: right;
-        font-size: 10px;
-        margin: 0;
+        {# float: right; #}
+        display: inline-block;
+        {# rotate: 90deg; #}
+        margin: auto;
         {# margin-right: -20px; #}
-        text-align: center;
+        {# text-align: center; #}
+        width: 80px;
       }
 
       .guild img {
-        height: 80px;
-        {# rotate: 90deg; #}
+        height: 90px;
+        rotate: 90deg;
       }
 
       .guild figcaption {
+        display: none;
         font-size: 7px;
+        visibility: hidden;
+      }
+
+      .header-slash {
+        font-size: 100px;
       }
 
       .wow {
@@ -81,7 +95,12 @@
       }
 
       h1 {
+        display: inline-block;
         font-size: 32px;
+        letter-spacing: -1px;
+        {# line-height: 25px; #}
+        {# text-align: right; #}
+        {# width: 195px; #}
       }
 
       h3 {
@@ -146,6 +165,7 @@
 
       .nn-output.midi-archive-collection-item {
         font-size: 16px;
+        text-transform: normal;
       }
 
       .midi-archive-collection-item:hover {
@@ -158,6 +178,8 @@
         {# bottom: 180px; #}
         height: calc(100vh - 180px);
         overflow-y: scroll;
+        width: 100%;
+        word-wrap: break-word;
         {# margin: 60px; #}
         {# border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round; #}
       }
@@ -216,12 +238,15 @@
             <img src="{{'/assets/images/midi-ring.gif' | url}}" />
             <figcaption>Source: <a href="https://www.ubikmusic.com/midiring/" target=_blank>The MIDI Webring</a></figcaption>
           </figure>
-          <h1>{{ title }}</h1>
+          <span class="header-slash">/</span>
+          <h1>
+            <span style="visibility: hidden; display: none;">MIDI</span>Archive
+          </h1>
         </header>
         <section class="introduction">
           <h3>{{ description }}</h3>
-          <p class="introduction-quote">"I listened to the music. It was hideous. I have never heard anything like it. It was distorted, diabolical, without sense or meaning, except, perhaps, an alien, disconcerting meaning that should never have been there. I could believe only with the greatest effort that it had once been a Bach Fugue, part of a most orderly and respected work." - Philip K. Dick, <a href="https://sickmyduck.narod.ru/pkd097-0.html"><em>The Preserving Machine</em></a></p>
           {{ content | safe }}
+          {# <p class="introduction-quote">"I listened to the music. It was hideous. I have never heard anything like it. It was distorted, diabolical, without sense or meaning, except, perhaps, an alien, disconcerting meaning that should never have been there. I could believe only with the greatest effort that it had once been a Bach Fugue, part of a most orderly and respected work." - Philip K. Dick, <a href="https://sickmyduck.narod.ru/pkd097-0.html"><em>The Preserving Machine</em></a></p> #}
           {# <li class="midi-archive-collection-item nn-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
             In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!
           </li> #}
@@ -243,9 +268,17 @@
           </ul> #}
           <div class="midi-archive-collection neural-net">
             <h3 class="midi-archive-collection-header">Neural Net</h3>
+            <p>The <a href="https://colab.research.google.com/drive/1hpzG6ygsn0Cv44ImhyOn13eHtSo_Lccg#scrollTo=2KCKQ2kVr24C" target="_blank">neural net model developed and trained for use in this project</a> is an 800k-parameter decoder-only transformer, intended to express something at once whimsical and general about the underlying archive. It is intended to serve an educationl purpose, and does not represent the state of the art in 2023, nor is it intended to be used seriously as a tool for music creation.<p>
+
+            </p>It currently runs as an AWS Lambda Function at noon (GMT) every day to produce a piece of music around three minutes in length. Each time the model runs, it uses tokens generated from the previous pass to produce subsequent tokens, and in this way produces a single continuous piece of music that has no end, but is punctuated by a 24-hour cycle of rest.</p>
+
+            <p class="introduction-quote">"I listened to the music. It was hideous. I have never heard anything like it. It was distorted, diabolical, without sense or meaning, except, perhaps, an alien, disconcerting meaning that should never have been there. I could believe only with the greatest effort that it had once been a Bach Fugue, part of a most orderly and respected work." - Philip K. Dick, <a href="https://sickmyduck.narod.ru/pkd097-0.html"><em>The Preserving Machine</em></a></p>
             <ul class="midi-archive-collection-items">
               <li class="midi-archive-collection-item nn-output" id="neural-net-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
-                In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!
+                <p>Click to listen to the most recent output from the model
+
+                {# The neural net model used here is simple by design, and you can [check out and run the source code yourself right from your browser](https://colab.research.google.com/drive/1hpzG6ygsn0Cv44ImhyOn13eHtSo_Lccg#scrollTo=2KCKQ2kVr24C). My intent is to have the model be able to express something at once whimsical and general about the underlying archive, and to be simple enough to serve educational purposes. It does not represent the state of the art in 2023, nor is it intended to be used seriously as a tool for music creation. Furthermore, I planned for this model to be portable and cheap to run. In its current implementation, it exists as a ~800k parameter decoder-only transformer model that runs from an AWS Lambda Function every day around noon (GMT) to produce a piece of music around three minutes in length. Each time, the model uses tokens generated from the previous pass to produce subsequent tokens, and in this way produces a single continuous piece of music that has no end, but is punctuated by a 24-hour cycle of rest. #}
+                </p>
               </li>
               {# <li class="midi-archive-collection-item" id="{{ asset }}" data-src="{{ asset | url }}">
                 Neural Net output

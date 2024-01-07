@@ -2006,7 +2006,7 @@ class MidiPlayer {
 
   setStatus (str = '') {
     this.statusEl.innerHTML = str || `${this.playerStatus} <strong>${this.selectedFilename}</strong>`
-    this.shareLink.innerText = 'Link to share this song'
+    this.shareLink.innerText = ''
 
     if (this.url) {
       const hash = this.url.split(pathPrefix)[1]
@@ -2016,6 +2016,8 @@ class MidiPlayer {
       } else {
         this.shareLink.setAttribute('href', '#neural-net-output')
       }
+
+      this.shareLink.innerText = 'Link to share this song'
     }
   }
 }
