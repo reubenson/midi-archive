@@ -144,16 +144,15 @@ class MidiPlayer {
     this.displaySelectedSong()
   }
 
-  load (url) {
+  async load (url) {
     try {
-      this.player.load(url)
+      await this.player.load(url)
       this.playerStatus = 'loading'
       this.selectedFilename = url.split('/').pop()
       this.setStatus()
     } catch (error) {
-      console.log('hitting this')
       console.error(error)
-      this.setStatus('There was an error playing this file!')
+      // this.setStatus('There was an error playing this file!')
       this.playerStatus = 'error playing'
       this.setStatus()
     }
@@ -161,8 +160,8 @@ class MidiPlayer {
 
   play () {
     // if (this.needsFirstScroll) {
-      // this.playFileById(this.hash)
-      // this.displaySelectedSong()
+    // this.playFileById(this.hash)
+    // this.displaySelectedSong()
     // }
     // } else {
     this.player.play()
@@ -192,7 +191,9 @@ class MidiPlayer {
         this.shareLink.setAttribute('href', '#neural-net-output')
       }
 
-      this.shareLink.innerText = 'Link to share this song'
+      if (this.playerStatus !== 'error playing') {
+        this.shareLink.innerText = 'Link to share this song'
+      }
     }
   }
 }

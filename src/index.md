@@ -1,6 +1,6 @@
 ---
 title: The MIDI Archive
-description: Explore the sites and sounds of the early web with AI
+description: Exploring AI with the sites and sounds of the early web
 keywords: MIDI, machine learning, archive
 layout: index.njk
 ---
@@ -8,7 +8,7 @@ layout: index.njk
 
 Archives seem to have come into a kind of fashion as of late. In an age of planetary-scale existential precarity, they seem to offer solace in feeling knowable, certain, and grounding. The training procedures of AI foundation models like GPT have a close relationship with archives too, but instead rely on their accessibility, volume, and givenness, which allows archives to be composed and instrumentalized as training sets. I developed this project during my residency at [Recurse Center](https://recurse.com) in the fall of 2023 as an exploration of the opposing, and yet mutually reinforcing dynamics between building an archive and building a machine learning model.
 
-The MIDI files collected here and used to train the model were once very new. In presenting them here alongside the output of a machine learning model, I hope to present a bridge between epochs of technological transformation. Within each, the possibilties of new aesthetic experiences interact with the technics of producing and distributing new forms of media, producing artifacts that carry hopes and fears about how we ourselves may change.
+The MIDI files collected here and used to train the model were once very new. In presenting them here alongside the output of a machine learning model, I hope to bridge epochs of technological transformation. Within each, the possibilties of new aesthetic experiences interact with the technics of producing and distributing new forms of media, producing artifacts that carry hopes and fears about how we ourselves may change.
 
  Read more about this project at [https://reubenson.com/recurse/reflections](https://reubenson.com/recurse/reflections). 
 
