@@ -11,20 +11,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120208217-1"></script>
     <style type="text/css">
       body {
-        {# background-color: #f0f0e6; #}
         margin: 0;
         padding: 0;
         font-family: Courier New, monospace;
-        {# font-family: monospace; #}
         letter-spacing: .1px;
-        {# font-family: system-ui; #}
-        {# background-color: #f0f0e6; #}
-        {# font-family: sans-serif;
-        font-weight: 100;
-        letter-spacing: 1.15px; #}
-        {# margin: 0;
-        text-align: center;
-        width: 100%; #}
       }
       
       body p {
@@ -34,11 +24,9 @@
       .content header {
         margin: auto;
         text-align: center;
-        {# max-width: 240px; #}
       }
 
       .introduction {
-        {# font-style: italic; #}
         margin: auto;
         max-width: 1024px;
       }
@@ -49,10 +37,6 @@
         max-width: 768px;
       }
 
-      {# .introduction header {
-        background-image: url({{'/assets/prairiefrontier/images/embossbkgd1.jpg' | url}})
-      } #}
-
       a {
         color: black;
         border-bottom: solid black 1px;
@@ -60,12 +44,8 @@
       }
 
       .guild {
-        {# float: right; #}
         display: inline-block;
-        {# rotate: 90deg; #}
         margin: auto;
-        {# margin-right: -20px; #}
-        {# text-align: center; #}
         width: 80px;
       }
 
@@ -99,9 +79,6 @@
         display: inline-block;
         font-size: 32px;
         letter-spacing: -1px;
-        {# line-height: 25px; #}
-        {# text-align: right; #}
-        {# width: 195px; #}
       }
 
       h3 {
@@ -120,17 +97,11 @@
         bottom: 120px;
         left: 0;
         right: 0;
-        {# height: calc(100vh - 120px); #}
         width: 100vw;
       }
 
       .midi-archive-collection {
-        {# .broider { #}
-        {# border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round; #}
-        {# border-width: 2px; #}
-        {# border-style: solid; #}
         border-top: solid black 2px;
-        {# padding: 20px; #}
         margin: 0 0 40px;
         max-width: calc(100vw - 80px);
       }
@@ -176,13 +147,10 @@
       .container {
         box-sizing: border-box;
         position: absolute;
-        {# bottom: 180px; #}
         height: calc(100vh - 180px);
         overflow-y: scroll;
         width: 100%;
         word-wrap: break-word;
-        {# margin: 60px; #}
-        {# border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAnRJREFUeF7tm8FyAyEMQ8n/f3QzvXRm2XS1QsIhQb3aGHgIbNj00Vr7afljCDw65wO/X2OAMjhbC1COF/QOUIiIc4BAuXD7efdHYoCKGghQEWDfPEDfDbS6bLo8g8wwRsKh8cEzNECP2AN0RIYXbQJ0daD9CqnjpbJkO1/t1P5Re3V88C4foMcloIC/ehwJ0ABFu/rSTinwxZFEb3m2rJKyJBqwhO5eY2n8d7Z8gBJ1aoCeVRuF3tvJt73KgUod3jgj3VXGbZL/OFJJa2TLB+hFWRWgWL9RKGZEeXw8UGq2b3Cm30Orz0i2zn0Dw0OXAWpegQDdDah5vuXh5McR9xlbTsDcYYAGqJmAOdx2CnWXZctnebNgTuEC1Ew4QAOU+ESw4Hd3tH4f9ziCJqTaERAUH7XfPsuzXwQCtJMcAhKFIgIkUAScsq/wCYTkQ7tTQAY+IuYMnangKPT8n4TSa5oDKNqDaMuh9qod9W+1B2gUSgvWqkCUtKLQBRRKS6RrwN5U1P6WV6g6wQBVCUahRwKzH2jN6wVf7KU605GUZk94dvzlztDZE54dP0DNhAP024G6k5KZ1ync1KTjSEoBelwz+w8dZitMjR+FqgTBxWG5pIQGZOZBh0PjK7VXvDbRhMgGpcBmJKXqxw3EN0ARIdL+dUCry6rZWRytp71sQhNCA1LtqH/VjsYXoGRZFaAkMKTg5YBWVwFqUkIAkb38pzhoQKo9QFWCXfsADVDi+coMayScmnRG+vxr47jLVxf2aMIBigiR9gAlgSH3jweKJriV3XGGbgUMTTZAESHSHqAkMOQ+AhTF3NoeoOblD9AANRMwh3sCUQHAFEF2KngAAAAASUVORK5CYII=") 28 /  28px / 0 round; #}
       }
 
       .content {
@@ -224,7 +192,6 @@
 
         .guild img {
           height: 80px;
-          {# rotate: 90deg; #}
         }
       }
     </style>
@@ -247,26 +214,8 @@
         <section class="introduction">
           <h3>{{ description }}</h3>
           {{ content | safe }}
-          {# <p class="introduction-quote">"I listened to the music. It was hideous. I have never heard anything like it. It was distorted, diabolical, without sense or meaning, except, perhaps, an alien, disconcerting meaning that should never have been there. I could believe only with the greatest effort that it had once been a Bach Fugue, part of a most orderly and respected work." - Philip K. Dick, <a href="https://sickmyduck.narod.ru/pkd097-0.html"><em>The Preserving Machine</em></a></p> #}
-          {# <li class="midi-archive-collection-item nn-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
-            In addition to browsing the archive below, click here to listen to music produced by the neural net model. This music is generated daily at noon (GMT), so check back again later!
-          </li> #}
         </section>
         <section class="midi-archive">
-          {# {% set totalMidiCount = 0 %}
-          {% for site, data in collections.midiAssets %}
-            {% set totalMidiCount = totalMidiCount + data.midis.length %}
-          {% endfor %}
-          <h3>There are currently {{ totalMidiCount }} MIDI files in the collection!</h3> #}
-          
-          {# <p>Table of contents for the archive:</p>
-          <ul>
-            {% for site, data in collections.midiAssets %}
-              <li>
-                <a href="#{{site}}">{{data.name}}</a>
-              </li>
-            {% endfor %}
-          </ul> #}
           <div class="midi-archive-collection neural-net">
             <h3 class="midi-archive-collection-header">Neural Net</h3>
             <p>The <a href="https://colab.research.google.com/drive/1hpzG6ygsn0Cv44ImhyOn13eHtSo_Lccg#scrollTo=2KCKQ2kVr24C" target="_blank">neural net model developed and trained for use in this project</a> is an 800k-parameter decoder-only transformer, intended to express something at once whimsical and general about the underlying archive. It is intended to serve an educationl purpose, and does not represent the state of the art in 2023, nor is it intended to be used seriously as a tool for music creation.<p>
@@ -276,25 +225,16 @@
             <p class="introduction-quote">"I listened to the music. It was hideous. I have never heard anything like it. It was distorted, diabolical, without sense or meaning, except, perhaps, an alien, disconcerting meaning that should never have been there. I could believe only with the greatest effort that it had once been a Bach Fugue, part of a most orderly and respected work." - Philip K. Dick, <a href="https://sickmyduck.narod.ru/pkd097-0.html"><em>The Preserving Machine</em></a></p>
             <ul class="midi-archive-collection-items">
               <li class="midi-archive-collection-item nn-output" id="neural-net-output" data-src="https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/model-prediction.mid">
-                <p>Click to listen to the most recent output from the model
-
-                {# The neural net model used here is simple by design, and you can [check out and run the source code yourself right from your browser](https://colab.research.google.com/drive/1hpzG6ygsn0Cv44ImhyOn13eHtSo_Lccg#scrollTo=2KCKQ2kVr24C). My intent is to have the model be able to express something at once whimsical and general about the underlying archive, and to be simple enough to serve educational purposes. It does not represent the state of the art in 2023, nor is it intended to be used seriously as a tool for music creation. Furthermore, I planned for this model to be portable and cheap to run. In its current implementation, it exists as a ~800k parameter decoder-only transformer model that runs from an AWS Lambda Function every day around noon (GMT) to produce a piece of music around three minutes in length. Each time, the model uses tokens generated from the previous pass to produce subsequent tokens, and in this way produces a single continuous piece of music that has no end, but is punctuated by a 24-hour cycle of rest. #}
-                </p>
+                <p>Click to listen to the most recent output from the model</p>
               </li>
-              {# <li class="midi-archive-collection-item" id="{{ asset }}" data-src="{{ asset | url }}">
-                Neural Net output
-              </li> #}
             </ul>
           </div>
 
           {% for site, data in collections.midiAssets %}
             <div class="midi-archive-collection {{ site }}">
-              {# <h3 id="#{{ site }}"><a href="#{{ site }}">{{ data.name}}</a></h3> #}
               <h3 class="midi-archive-collection-header" id="{{ site }}"><a href={{ data.homepage }} target="_blank">{{ data.name}}</a></h3>
               {% set descriptionSource = ["./src/_includes/", site, ".md"] | join %}
               {% renderFile descriptionSource %}
-              {# <span class="dropdown">⇩</span> #}
-              {# <p>{{ data.description }}</p> #}
               <ul class="midi-archive-collection-items">
                 {% for asset in data.midis %}
                   <li class="midi-archive-collection-item" id="{{ asset }}" data-src="{{ asset | url }}">
@@ -320,8 +260,6 @@
         <p>
           <a class="share"></a>
         </p>
-        {# <p class="current-time">Current Time: <span class="current-time-text">0</span></p> #}
-        {# <p class="total-time">Total Time: <span class="total-time-text">0</span></p> #}
       </div>
     </div>
     <script>
