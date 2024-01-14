@@ -1939,17 +1939,6 @@ class MidiPlayer {
     el.scrollIntoView({ behavior: 'smooth' })
   }
 
-  // playFileById (id) {
-  //   const fileEl = document.getElementById(id)
-  //   const src = fileEl.getAttribute('data-src')
-
-  //   fileEl.classList.toggle('playing')
-  //   updateCurrentlyPlaying(fileEl)
-  //   fileEl.scrollIntoView({ behavior: 'smooth' })
-
-  //   // this.playFromArchive(src)
-  // }
-
   playRandom () {
     const url = this.getRandomSongUrl()
 
@@ -1964,16 +1953,16 @@ class MidiPlayer {
 
   playAI () {
     this.selectedEl = document.getElementById('neural-net-output')
-    // this.url = AI_FILEPATH
     this.playFromArchive(AI_FILEPATH)
     this.displaySelectedSong()
   }
 
   async load (url) {
+    this.selectedFilename = url.split('/').pop()
+
     try {
       await this.player.load(url)
       this.playerStatus = 'loading'
-      this.selectedFilename = url.split('/').pop()
       this.setStatus()
     } catch (error) {
       console.error(error)
