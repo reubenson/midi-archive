@@ -7,6 +7,7 @@ This repository implements [Scrapy](https://docs.scrapy.org/en/latest/) to colle
 See [https://medium.com/@reubenson/archives-ai-and-music-of-the-early-web-9b2f51fdef47](https://medium.com/@reubenson/archives-ai-and-music-of-the-early-web-9b2f51fdef47) for a broad description of the project
 
 ### General Project Workflow
+```mermaid
 flowchart TD
     A(Scrape MIDI files from early web) --> Z(Present model outout and interactive MIDI archive on Eleventy static site)
     A --> B(Process MIDI into tokens for training neural net)
@@ -16,6 +17,7 @@ flowchart TD
     E --> F(Deploy to AWS Lambda)
     F --> |Daily Cloudwatch Trigger|G(Generate MIDI sequence and save to S3)
     G --> Z
+```
 <!-- https://mermaid.live/edit#pako:eNqVU02P2jAQ_SsjSyt5peXUG4dKQIBFottKIHVVcRmcASwSm44dKN3d_96xEz7UnhpFih2_eTPz5vlNGV-S6qtN5U9mhxxhWawcyDPQC8N4IPgyK2awsRUF2LCvgZCrM5xo_Qi93mf4ob8xBXIRaqGqwDdRXkBXgnWRGE20x44F2ezSxjsYV3SUoDOEiNEaCDbSY5c58w6F1xsKoQ0VLg_R78lJGZ4hMlpn3RYcNYyVfGIX_vAAw8ww_2-GXHVzqDyWgoTFJxg2Zn9lbmlHekLR7C5UKSQv7W_iDjjKwEIvU4p7_ixRByoyaKzHvw6eL-pJ1q8vL68dZJwhE12Q1HROh4PvC5hjvS7x1u0ko151gVYGM6p8U54wV8h2u70W1cLe_0EtW9T7VE_JybxiN6xAPxtyhnKHAWVsWZK_VS70PMnlk7o5btANWRxyN9QrfqaH7E-BGExlk22Md45MDHC0mIN8kjykbG2nacVk6GqjNUtGg-Fu4tPM_axvffW67qm80DBhGW52bt0sDbU2vlHJ9rndTS9H6knVxDXaUu7KWzpcqbijmlaqL8sSeb9SK_chOBT_L87OqH7khp5UcyhF0sLilrFuf378AbMIGYw -->
 
 ### Installation / Development
