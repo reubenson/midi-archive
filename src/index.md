@@ -10,9 +10,9 @@ Archives seem to have come into a kind of fashion as of late. In an age of plane
 
 The MIDI files collected here and used to train the model were once very new. In presenting them here alongside the output of a machine learning model, I hope to bridge epochs of technological transformation. Within each, the possibilties of new aesthetic experiences interact with the technics of producing and distributing new forms of media, producing artifacts that carry hopes and fears about how we ourselves may change.
 
- Read more about this project at [https://reubenson.com/recurse/reflections](https://reubenson.com/recurse/reflections). 
+ Read more about this project at [https://medium.com/@reubenson/archives-ai-and-music-of-the-early-web-9b2f51fdef47](https://medium.com/@reubenson/archives-ai-and-music-of-the-early-web-9b2f51fdef47). 
 
- This project also owes a debt to [BitMIDI](https://bitmidi.com/about), which also developed the [MIDI player](https://github.com/feross/timidity) I've implemented on this site with the [FreePats General MIDI sound library](https://freepats.zenvoid.org/SoundSets/general-midi.html) for your listening pleasure. And if you have a favorite MIDI website that would have a good home with this archive, please do get in touch.
+ This project also owes a debt to [BitMIDI](https://bitmidi.com/about), which also developed the [MIDI player](https://github.com/feross/timidity) I've implemented on this site with the [FreePats General MIDI sound library](https://freepats.zenvoid.org/SoundSets/general-midi.html) for your listening pleasure. And if you have a favorite MIDI website that would have a good home with this archive, please do get in touch!
 
 <!-- The media ecosystem that emerges from widespread usage of generative AI feels unknowable at this time, but looking back to the brief window of time when music on the web was dominated by MIDI may tell us something about what drives humans to develop, use, and share technology. In both machine learning and the archive, there exist archetypes of transformation and conservation, which serve as carrier for the hopes and fears about how we ourselves may change. -->
 
