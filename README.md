@@ -1,6 +1,6 @@
 # midi-archive
 
-An informal archive of music on the web before the age of MP3s. This is not intended to be comprehensive, but is instead an archive that exists alongside a companion machine learning model that uses the archive as its corpus - visit [/midi-archive-neural-net](https://github.com/reubenson/midi-archive-neural-net) for the accompanying machine learning model.
+An informal archive of music on the web before the age of MP3s. This is not intended to be comprehensive, but is instead an archive that exists alongside a companion machine learning model that uses the archive as its corpus - visit [/midi-archive-neural-net](https://github.com/reubenson/midi-archive-neural-net) for the accompanying machine learning model, and visit [https://reubenson.com/midi-archive/](https://reubenson.com/midi-archive/) to see the project in production.
 
 This repository implements [Scrapy](https://docs.scrapy.org/en/latest/) to collect MIDI files from websites before Y2K, and [Eleventy](https://www.11ty.dev/) for static site genraeration.
 
