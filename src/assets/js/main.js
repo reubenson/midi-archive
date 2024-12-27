@@ -1,5 +1,7 @@
 'use-strict'
 const Timidity = require('timidity')
+const MidiPlayerJs = require('midi-player-js');
+// getting hung up on getting this module to import correctly
 let player
 let currentlyPlaying = null
 let midiFiles = []
@@ -8,7 +10,15 @@ const AI_FILEPATH = 'https://midi-archive.s3.us-east-2.amazonaws.com/neural-net/
 const REVERB_FILE = 'https://reubenson.com/weaving/Swede%20Plate%202.0s.wav'
 
 class MidiPlayer {
-  constructor () {
+  constructor (useMidiInterface = false) {
+    console.log('useMidiInterface', MidiPlayerJs)
+    if (useMidiInterface) {
+      // Initialize player and register event handler
+      this.externalPlayer = new MidiPlayerJs.default.Player(function(event) {
+        console.log(event);
+      });
+    }
+
     this.player = new Timidity(pathPrefix + 'assets/timidity')
     this.addReverbNode()
     this.playButton = document.querySelector('.play-button')
@@ -122,6 +132,11 @@ class MidiPlayer {
     this.url = url
     this.load(url)
     this.play()
+
+    // Load a MIDI file
+    console.log('loading external player', this.externalPlayer)
+    this.externalPlayer.loadFile(url);
+    this.externalPlayer.play();
   }
 
   playAI () {
@@ -181,7 +196,7 @@ class MidiPlayer {
 
 // add hover functionality to midi files
 window.onload = function () {
-  player = new MidiPlayer()
+  player = new MidiPlayer(true)
 }
 
 document.addEventListener('click', clickHandler)
